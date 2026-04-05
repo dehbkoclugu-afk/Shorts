@@ -1,0 +1,99 @@
+[
+  {
+    "scheduled_date": "2026-04-06",
+    "topic": "[NEWS] US says it has arrested relatives of late Iranian ​general Qasem ​Sole: Here's What It Means for the World",
+    "title": "5 أقارب لسليماني معتقلون: حرب قادمة؟",
+    "script_path": "batch_output/2026-04-06/script.json",
+    "video_path": "batch_output/2026-04-06/short.mp4",
+    "audio_path": "batch_output/2026-04-06/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-06/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "هل اعتقال أقارب سليماني بداية حرب؟ 🤔\nA) نعم، مؤكد 💥\nB) مجرد ضغط 🤏\nC) لا أعرف 🤷\nOnly 10% get this right... 👇",
+      "community_poll": {
+        "text": "Is Soleimani's family arrest a sign of impending war or a tactical move? 🤔 Let's discuss! 💥",
+        "poll_options": [
+          "Full-scale war",
+          "Limited strikes",
+          "Diplomatic crisis",
+          "Internal purge"
+        ]
+      },
+      "debate_starter": "اعتقال أقارب سليماني ليس تصعيدًا، بل تذكير بأن إيران لن تسلم من عواقب أفعالها. هل هذا سيجبرهم على التغيير؟ 🤔",
+      "prediction_game": "🎯 PREDICTION GAME: What happens by end of 2026?\n\nDrop your prediction — I'll pin the best one! 📌\n\nMost creative prediction wins a shoutout! 🏆"
+    },
+    "score": 37
+  },
+  {
+    "scheduled_date": "2026-04-07",
+    "topic": "[NEWS] `Iran’s Defenses Have Been Struck, but They Can Still Fire Back: The Analysis Nobody Is Giving You",
+    "title": "استهداف دفاعات إيران: 3 حقائق مخفية",
+    "script_path": "batch_output/2026-04-07/script.json",
+    "video_path": "batch_output/2026-04-07/short.mp4",
+    "audio_path": "batch_output/2026-04-07/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-07/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "⚡ Hot take: What happens next?\n\n🔴 Full-scale war\n🟡 Cold war standoff\n🟢 Peace deal\n\nVote below! Most get this WRONG 👇",
+      "community_poll": {
+        "text": "🔥 After watching today's analysis on استهداف دفاعات إيران: 3 حقائق مخفية... What's YOUR prediction?",
+        "poll_options": [
+          "Full escalation 💥",
+          "Diplomatic solution 🤝",
+          "Status quo continues",
+          "Something nobody expects 🔮"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🧠 INTEL TEST: Based on this briefing...\n\nWhat would YOU do as commander-in-chief?\nMost strategic answer wins! 🎖️👇"
+    },
+    "score": 41
+  },
+  {
+    "scheduled_date": "2026-04-08",
+    "topic": "Iran's Drone Army: How They Changed the Middle East",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-09",
+    "topic": "What if Hezbollah Launches 100,000 Rockets at Israel at Once?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-10",
+    "topic": "What if Israel and Iran Go to Full-Scale War?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-11",
+    "topic": "What if the Gulf States Unite Against Iran?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-12",
+    "topic": "UAE vs Iran: The Hidden Arms Race in the Gulf",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  }
+]
