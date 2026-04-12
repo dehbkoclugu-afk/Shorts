@@ -95,5 +95,102 @@
     "video_path": null,
     "published": false,
     "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-13",
+    "topic": "[NEWS] Iran war lands 'triple blow' to flood: The Analysis Nobody Is Giving You",
+    "title": "إيران في خطر: 3 ضربات دمرت قدراتها؟",
+    "script_path": "batch_output/2026-04-13/script.json",
+    "video_path": "batch_output/2026-04-13/short.mp4",
+    "audio_path": "batch_output/2026-04-13/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-13/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "هل تعتقدون أن هذه الضربات ستُنهي البرنامج النووي الإيراني؟ ⚛️\nA) نعم، تماماً.\nB) لا، ستُسرّعه.\nC) لا أعرف.\nOnly 5% predict correctly! 🤔👇",
+      "community_poll": {
+        "text": "Was Iran's recent military action a strategic masterstroke or a desperate gamble? 🤔 Let's debate! 💥",
+        "poll_options": [
+          "Masterstroke",
+          "Desperate Gamble",
+          "Too Early to Tell",
+          "Unrelated Event"
+        ]
+      },
+      "debate_starter": "الغرب إظهاره هو أن العقوبات هي السلاح الأقوى. هل يعتقدون أن إيران ستنهار بسهولة؟ 🤔",
+      "prediction_game": "🎯 PREDICTION GAME: What happens by end of 2026?\n\nDrop your prediction — I'll pin the best one! 📌\n\nMost creative prediction wins a shoutout! 🏆"
+    },
+    "score": 43
+  },
+  {
+    "scheduled_date": "2026-04-14",
+    "topic": "[NEWS] What Concerns after satellite provider restricts Iran images following US p Really Means for the Future",
+    "title": "عاجل: إيران تحت المراقبة.. الغرب يخفي كارثة!",
+    "script_path": "batch_output/2026-04-14/script.json",
+    "video_path": "batch_output/2026-04-14/short.mp4",
+    "audio_path": "batch_output/2026-04-14/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-14/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "هل الغرب يخفي كارثة إيرانية حقيقية؟ 🤔\nA) نعم، الوضع أخطر مما نتخيل\nB) لا، مجرد تضخيم إعلامي\n\nOnly 10% will guess right! 👇",
+      "community_poll": {
+        "text": "Is the West hiding a catastrophe in Iran, or is this just fear-mongering? 🌍",
+        "poll_options": [
+          "West is hiding it",
+          "Pure propaganda",
+          "It's complicated",
+          "Too early to tell"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🔮 CRYSTAL BALL TIME: عاجل: إيران تحت المراقبة.. الغرب يخفي كا\n\nComment your wildest theory about what happens next.\nWrong answers only 😂👇"
+    },
+    "score": 42
+  },
+  {
+    "scheduled_date": "2026-04-15",
+    "topic": "Iran's Hypersonic Missile Program: Should the World Worry?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-16",
+    "topic": "Iran's Underground Missile Cities: The Hidden Threat",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-17",
+    "topic": "Iran vs Israel: The Shadow War Nobody Talks About",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-18",
+    "topic": "Iran's Proxy Network: The Most Powerful Non-State Military in the World",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-19",
+    "topic": "What if Israel Strikes Iran's Nuclear Facilities?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
   }
 ]
