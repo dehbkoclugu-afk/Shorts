@@ -87,8 +87,8 @@ def _load_font(size: int) -> ImageFont.FreeTypeFont:
 
 # ─── Pexels footage indir ────────────────────────────────────────────────────
 
-def _fetch_pexels_clips(keywords: list, n: int = 3) -> list[str]:
-    """Pexels'ten meditation/nature/space klipleri indirir."""
+def _fetch_pexels_clips(keywords: list, n: int = 5) -> list[str]:
+    """Pexels'ten meditation/nature/space klipleri indirir. Daha fazla sayıda ve daha çeşitli klip getirir."""
     api_key = os.environ.get("PEXELS_API_KEY", "")
     if not api_key:
         print("[freq_video] PEXELS_API_KEY eksik — renk arka plan kullanılacak")
@@ -96,7 +96,26 @@ def _fetch_pexels_clips(keywords: list, n: int = 3) -> list[str]:
 
     downloaded = []
     seen_ids = set()
-    queries = keywords[:4]
+    # Daha fazla keyword kullan ve rasgele sıra ile başla
+    queries = list(keywords[:6])
+    random.shuffle(queries)
+
+    # Çeşitliği arttırmak için fallback keywords ekle
+    fallback_keywords = [
+        "meditation nature calm peaceful",
+        "healing light energy vibration",
+        "cosmic space stars universe",
+        "sacred geometry spiritual",
+        "flowing water nature peaceful",
+        "forest nature morning light",
+        "chakra aura spiritual energy",
+        "divine light consciousness",
+        "zen garden peaceful meditation",
+        "mindfulness calm breathing"
+    ]
+
+    # Rasgele fallback keywords ekle
+    queries.extend(random.sample(fallback_keywords, min(3, len(fallback_keywords))))
 
     for query in queries:
         if len(downloaded) >= n:
@@ -104,13 +123,17 @@ def _fetch_pexels_clips(keywords: list, n: int = 3) -> list[str]:
         try:
             resp = requests.get(
                 "https://api.pexels.com/videos/search",
-                params={"query": query, "per_page": 10, "orientation": "portrait"},
+                params={"query": query, "per_page": 15, "orientation": "portrait"},
                 headers={"Authorization": api_key},
                 timeout=15,
             )
             if resp.status_code != 200:
                 continue
-            for video in resp.json().get("videos", []):
+            videos = resp.json().get("videos", [])
+            # Rasgele sıra ile videolar döngü
+            random.shuffle(videos)
+
+            for video in videos:
                 if len(downloaded) >= n:
                     break
                 vid = f"pexels_{video['id']}"

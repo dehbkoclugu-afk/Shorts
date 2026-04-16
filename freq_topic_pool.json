@@ -237,6 +237,585 @@
     ],
     "tags": ["1111 Hz", "Angel Number", "1111", "Spiritual Frequency", "Synchronicity", "Angel Signs", "Meditation", "Higher Guidance"],
     "pexels_keywords": ["angel light rays heaven", "number 1111 mystical", "divine signs universe", "spiritual light golden", "cosmic synchronicity stars"],
-    "mood": "divine"
+    "mood": "divine",
+    "binaural_offset": 6.0
+  },
+  {
+    "hz": 194,
+    "name": "194 Hz",
+    "title_name": "194 Hz | Chakra Activation",
+    "benefit": "activate and balance your energy centers",
+    "short_benefit": "Chakra Balance",
+    "description": "A complementary frequency to 174 Hz, supporting deeper chakra alignment and energy flow.",
+    "hooks": [
+      "This 194 Hz frequency opens your chakras in ways you've never felt before...",
+      "194 Hz activates your entire energy system. Listen until the end and feel the shift.",
+      "Stay until the end — this frequency is recalibrating your body's energy field."
+    ],
+    "tags": ["194 Hz", "Chakra Activation", "Energy Healing", "Chakra Alignment", "Binaural Beats"],
+    "pexels_keywords": ["chakra meditation colors", "energy field aura light", "sacred spiral energy", "flowing energy nature"],
+    "mood": "healing",
+    "binaural_offset": 5.0
+  },
+  {
+    "hz": 304,
+    "name": "304 Hz",
+    "title_name": "304 Hz | Deep Cellular Regeneration",
+    "benefit": "accelerate cellular repair and regeneration",
+    "short_benefit": "Cell Regeneration",
+    "description": "Works in harmony with 285 Hz for amplified cellular healing and DNA regeneration.",
+    "hooks": [
+      "304 Hz reaches deep into your cells, triggering regeneration at the molecular level...",
+      "Listen until the end — every cell in your body is listening and healing.",
+      "This frequency was designed for maximum cellular healing potential."
+    ],
+    "tags": ["304 Hz", "Cell Regeneration", "DNA Healing", "Cellular Repair", "Solfeggio"],
+    "pexels_keywords": ["cellular healing microscope", "DNA regeneration light", "molecular healing energy"],
+    "mood": "healing",
+    "binaural_offset": 4.5
+  },
+  {
+    "hz": 357,
+    "name": "357 Hz",
+    "title_name": "357 Hz | Harmony & Balance",
+    "benefit": "restore balance and inner harmony to your entire being",
+    "short_benefit": "Inner Harmony",
+    "description": "A bridge frequency between emotional and spiritual realms, promoting perfect balance.",
+    "hooks": [
+      "357 Hz brings your entire being into perfect alignment and harmony...",
+      "Feel the balance returning to your body, mind, and spirit. Stay until the end.",
+      "This is the frequency of equilibrium. Let it restore your wholeness."
+    ],
+    "tags": ["357 Hz", "Harmony", "Balance", "Inner Peace", "Meditation"],
+    "pexels_keywords": ["balanced nature symmetry", "flowing water harmony", "balanced stones zen garden"],
+    "mood": "calm",
+    "binaural_offset": 5.5
+  },
+  {
+    "hz": 396.5,
+    "name": "396.5 Hz",
+    "title_name": "396.5 Hz | Deep Fear Release",
+    "benefit": "release deep-rooted fears and transform them into power",
+    "short_benefit": "Fear Transmutation",
+    "description": "An enhanced version of 396 Hz for profound emotional liberation and fear release.",
+    "hooks": [
+      "396.5 Hz is engineered to dissolve fear at the deepest levels...",
+      "Listen until the end — your fears are dissolving and transforming into strength.",
+      "This frequency reaches the core of your fear patterns and neutralizes them."
+    ],
+    "tags": ["396.5 Hz", "Fear Release", "Emotional Healing", "Liberation", "Solfeggio"],
+    "pexels_keywords": ["fear release breaking chains", "freedom liberation light", "transforming darkness light"],
+    "mood": "liberation",
+    "binaural_offset": 6.5
+  },
+  {
+    "hz": 444,
+    "name": "444 Hz",
+    "title_name": "444 Hz | Angelic Protection",
+    "benefit": "surround yourself with angelic protection and divine light",
+    "short_benefit": "Divine Protection",
+    "description": "Associated with angelic presence, protection, and divine guidance.",
+    "hooks": [
+      "444 Hz surrounds you with angelic protection right now...",
+      "Feel the angels' presence as this frequency anchors divine protection around you.",
+      "Stay until the end — you are safe, guided, and protected."
+    ],
+    "tags": ["444 Hz", "Angel Frequency", "Protection", "Divine Presence", "Spiritual Safety"],
+    "pexels_keywords": ["angel wings light protection", "divine presence aura", "angelic light guidance"],
+    "mood": "divine",
+    "binaural_offset": 5.5
+  },
+  {
+    "hz": 517,
+    "name": "517 Hz",
+    "title_name": "517 Hz | Perfect Health Activation",
+    "benefit": "activate your body's natural healing intelligence for perfect health",
+    "short_benefit": "Perfect Health",
+    "description": "A frequency for invoking the body's inherent healing wisdom and vitality.",
+    "hooks": [
+      "517 Hz activates your body's perfect health blueprint right now...",
+      "Listen until the end — every cell knows exactly what to do to restore health.",
+      "This is your body's activation frequency for optimal wellness."
+    ],
+    "tags": ["517 Hz", "Health Frequency", "Healing Activation", "Vitality", "Wellness"],
+    "pexels_keywords": ["health vitality glowing", "perfect health energy", "wellness activation light"],
+    "mood": "healing",
+    "binaural_offset": 4.8
+  },
+  {
+    "hz": 552,
+    "name": "552 Hz",
+    "title_name": "552 Hz | Pure Frequency of Love",
+    "benefit": "embody pure love and transform your entire vibrational signature",
+    "short_benefit": "Pure Love Vibration",
+    "description": "An amplified love frequency for deep emotional transformation and unconditional acceptance.",
+    "hooks": [
+      "552 Hz is the pure crystalline frequency of unconditional love...",
+      "Let this frequency rewire your heart and transform your entire life.",
+      "Stay until the end — you are becoming love itself."
+    ],
+    "tags": ["552 Hz", "Love Frequency", "Heart Healing", "Unconditional Love", "Transformation"],
+    "pexels_keywords": ["pure love heart light", "crystalline love frequency", "unconditional love aura"],
+    "mood": "love",
+    "binaural_offset": 6.2
+  },
+  {
+    "hz": 594,
+    "name": "594 Hz",
+    "title_name": "594 Hz | Creative Flow",
+    "benefit": "unlock your creative genius and enter a flow state",
+    "short_benefit": "Creative Genius",
+    "description": "Activates creative centers in the brain, enabling effortless creative expression.",
+    "hooks": [
+      "594 Hz unlocks your creative potential and removes all blocks...",
+      "Let this frequency channel your deepest creative inspiration through you.",
+      "Stay until the end — your greatest ideas are flowing through right now."
+    ],
+    "tags": ["594 Hz", "Creativity", "Creative Flow", "Inspiration", "Genius"],
+    "pexels_keywords": ["creative flow art light", "inspiration flowing energy", "creative genius activation"],
+    "mood": "miracle",
+    "binaural_offset": 5.3
+  },
+  {
+    "hz": 660,
+    "name": "660 Hz",
+    "title_name": "660 Hz | Soul Connection",
+    "benefit": "deepen your connection with your soul's true purpose",
+    "short_benefit": "Soul Purpose",
+    "description": "A frequency for soul alignment and discovering your life's true calling.",
+    "hooks": [
+      "660 Hz connects you with your soul's deepest wisdom and purpose...",
+      "Listen until the end — your soul is revealing your true path.",
+      "This frequency aligns you with your destiny and life purpose."
+    ],
+    "tags": ["660 Hz", "Soul Connection", "Life Purpose", "Soul Alignment", "Destiny"],
+    "pexels_keywords": ["soul connection meditation", "purpose light guidance", "soul alignment universe"],
+    "mood": "spiritual",
+    "binaural_offset": 5.8
+  },
+  {
+    "hz": 714,
+    "name": "714 Hz",
+    "title_name": "714 Hz | Cellular Detox",
+    "benefit": "cleanse your body of toxins and impurities at a cellular level",
+    "short_benefit": "Detoxification",
+    "description": "A companion to 741 Hz, specifically targeting deep cellular detoxification.",
+    "hooks": [
+      "714 Hz is flushing toxins and impurities from every cell in your body...",
+      "Listen until the end — your body is becoming pure and clean.",
+      "Feel the cleansing happening at the deepest cellular levels right now."
+    ],
+    "tags": ["714 Hz", "Detox", "Cellular Cleanse", "Purification", "Healing"],
+    "pexels_keywords": ["detox cleansing water", "purification energy light", "toxin release cleansing"],
+    "mood": "cleansing",
+    "binaural_offset": 5.5
+  },
+  {
+    "hz": 768,
+    "name": "768 Hz",
+    "title_name": "768 Hz | Enhanced Intuition",
+    "benefit": "amplify your intuitive powers for instant clarity",
+    "short_benefit": "Intuitive Clarity",
+    "description": "An amplified intuition frequency for sharp decision-making and inner knowing.",
+    "hooks": [
+      "768 Hz amplifies your intuitive superpowers right now...",
+      "Your inner knowing becomes crystal clear. Listen until the end.",
+      "Trust this frequency — your intuition has never been sharper."
+    ],
+    "tags": ["768 Hz", "Intuition", "Inner Knowing", "Clarity", "Third Eye"],
+    "pexels_keywords": ["intuition inner light clarity", "third eye opening glow", "awareness expansion mind"],
+    "mood": "awakening",
+    "binaural_offset": 6.1
+  },
+  {
+    "hz": 825,
+    "name": "825 Hz",
+    "title_name": "825 Hz | Chakra Awakening",
+    "benefit": "awaken all chakras simultaneously for full spiritual activation",
+    "short_benefit": "Full Chakra Activation",
+    "description": "A master frequency for complete chakra system awakening and alignment.",
+    "hooks": [
+      "825 Hz awakens every chakra in your body at once...",
+      "Feel the energy rising through every energy center. Stay until the end.",
+      "Your entire chakra system is coming alive with divine energy."
+    ],
+    "tags": ["825 Hz", "Chakra Awakening", "All Chakras", "Spiritual Activation", "Energy"],
+    "pexels_keywords": ["chakra system awakening", "energy rising light", "spiritual activation power"],
+    "mood": "spiritual",
+    "binaural_offset": 5.9
+  },
+  {
+    "hz": 888,
+    "name": "888 Hz",
+    "title_name": "888 Hz | Abundance Frequency",
+    "benefit": "attract unlimited abundance, prosperity, and wealth",
+    "short_benefit": "Abundance & Prosperity",
+    "description": "The number 8 is the symbol of infinity. This frequency attracts unlimited abundance.",
+    "hooks": [
+      "888 Hz opens the floodgates of infinite abundance into your life...",
+      "Listen until the end — prosperity is flowing to you right now.",
+      "Your abundance is being activated at the quantum level."
+    ],
+    "tags": ["888 Hz", "Abundance", "Prosperity", "Wealth Attraction", "Abundance Frequency"],
+    "pexels_keywords": ["abundance prosperity golden light", "wealth energy flow", "infinite abundance universe"],
+    "mood": "divine",
+    "binaural_offset": 6.3
+  },
+  {
+    "hz": 936,
+    "name": "936 Hz",
+    "title_name": "936 Hz | Crown Chakra Activation",
+    "benefit": "activate your crown chakra for divine connection",
+    "short_benefit": "Crown Activation",
+    "description": "Works with the crown chakra for spiritual enlightenment and divine union.",
+    "hooks": [
+      "936 Hz is activating your crown chakra right now...",
+      "Feel the divine light descending through the crown of your head.",
+      "Stay until the end — you are entering states of higher consciousness."
+    ],
+    "tags": ["936 Hz", "Crown Chakra", "Enlightenment", "Divine Connection", "Spiritual"],
+    "pexels_keywords": ["crown chakra light", "divine enlightenment glow", "higher consciousness energy"],
+    "mood": "divine",
+    "binaural_offset": 6.4
+  },
+  {
+    "hz": 999,
+    "name": "999 Hz",
+    "title_name": "999 Hz | Ultimate Transformation",
+    "benefit": "undergo complete spiritual and physical transformation",
+    "short_benefit": "Total Transformation",
+    "description": "A master frequency for complete life transformation and ascension.",
+    "hooks": [
+      "999 Hz transforms every aspect of your being...",
+      "Listen until the end — your old self is dissolving, your new self is awakening.",
+      "This is the frequency of your greatest transformation."
+    ],
+    "tags": ["999 Hz", "Transformation", "Ascension", "Complete Healing", "Rebirth"],
+    "pexels_keywords": ["transformation metamorphosis light", "ascension rising higher", "rebirth new beginning"],
+    "mood": "miracle",
+    "binaural_offset": 6.5
+  },
+  {
+    "hz": 54,
+    "name": "54 Hz",
+    "title_name": "54 Hz | Heart Healing",
+    "benefit": "open, heal, and strengthen your heart chakra",
+    "short_benefit": "Heart Healing",
+    "description": "A frequency tuned for deep heart healing and emotional opening.",
+    "hooks": [
+      "54 Hz opens your heart completely, healing all past wounds...",
+      "Listen until the end — your heart is becoming whole again.",
+      "Feel the warmth and love flooding through your chest right now."
+    ],
+    "tags": ["54 Hz", "Heart Healing", "Heart Chakra", "Emotional Healing", "Love"],
+    "pexels_keywords": ["heart healing warm light", "heart opening love glow", "emotional healing warmth"],
+    "mood": "love",
+    "binaural_offset": 5.2
+  },
+  {
+    "hz": 72,
+    "name": "72 Hz",
+    "title_name": "72 Hz | Consciousness Expansion",
+    "benefit": "expand your consciousness and awareness to new dimensions",
+    "short_benefit": "Consciousness Expansion",
+    "description": "A frequency for expanding consciousness and awakening dormant abilities.",
+    "hooks": [
+      "72 Hz expands your consciousness beyond its current limitations...",
+      "Listen until the end — new dimensions of awareness are opening.",
+      "Your mind is expanding into infinite possibilities right now."
+    ],
+    "tags": ["72 Hz", "Consciousness", "Awareness Expansion", "Awakening", "Higher Mind"],
+    "pexels_keywords": ["consciousness expansion mind", "higher awareness opening", "dimensional awareness glow"],
+    "mood": "awakening",
+    "binaural_offset": 5.6
+  },
+  {
+    "hz": 81,
+    "name": "81 Hz",
+    "title_name": "81 Hz | Peace & Tranquility",
+    "benefit": "achieve profound peace and inner tranquility",
+    "short_benefit": "Inner Peace",
+    "description": "A calming frequency for achieving deep inner peace and psychological stability.",
+    "hooks": [
+      "81 Hz brings absolute peace and tranquility into your being...",
+      "Listen until the end — all stress, anxiety, and worry is dissolving.",
+      "You are entering states of profound inner peace right now."
+    ],
+    "tags": ["81 Hz", "Peace", "Tranquility", "Calm", "Stress Relief"],
+    "pexels_keywords": ["peace tranquility calm water", "inner stillness meditation", "peaceful harmony nature"],
+    "mood": "calm",
+    "binaural_offset": 4.5
+  },
+  {
+    "hz": 99,
+    "name": "99 Hz",
+    "title_name": "99 Hz | Immune System Boost",
+    "benefit": "strengthen and activate your entire immune system",
+    "short_benefit": "Immune Boost",
+    "description": "A frequency designed to strengthen immune function and cellular defense.",
+    "hooks": [
+      "99 Hz is activating your immune system's superpowers right now...",
+      "Listen until the end — every cell in your body is now defended and strengthened.",
+      "Your body's natural defenses are being powered up at maximum."
+    ],
+    "tags": ["99 Hz", "Immune System", "Health", "Immunity", "Wellness"],
+    "pexels_keywords": ["immune system strength energy", "cellular defense light", "wellness activation glow"],
+    "mood": "healing",
+    "binaural_offset": 4.9
+  },
+  {
+    "hz": 126,
+    "name": "126 Hz",
+    "title_name": "126 Hz | Bone Healing Frequency",
+    "benefit": "accelerate bone healing and strengthen skeletal structure",
+    "short_benefit": "Bone Healing",
+    "description": "Specifically tuned for bone regeneration, fracture healing, and skeletal strength.",
+    "hooks": [
+      "126 Hz accelerates bone healing and strengthens your entire skeleton...",
+      "Listen until the end — your bones are becoming stronger and more vibrant.",
+      "This frequency is specifically healing your bones at the deepest level."
+    ],
+    "tags": ["126 Hz", "Bone Healing", "Bone Regeneration", "Skeletal Health", "Healing"],
+    "pexels_keywords": ["bone healing strength", "skeleton structure light", "skeletal healing energy"],
+    "mood": "healing",
+    "binaural_offset": 5.0
+  },
+  {
+    "hz": 147,
+    "name": "147 Hz",
+    "title_name": "147 Hz | Tissue Repair Acceleration",
+    "benefit": "accelerate tissue and ligament repair throughout your body",
+    "short_benefit": "Tissue Repair",
+    "description": "A frequency for rapid healing of tissues, ligaments, and connective structures.",
+    "hooks": [
+      "147 Hz is accelerating tissue repair throughout your entire body...",
+      "Listen until the end — every damaged tissue is being rapidly regenerated.",
+      "Your body's healing intelligence is operating at peak efficiency right now."
+    ],
+    "tags": ["147 Hz", "Tissue Repair", "Ligament Healing", "Connective Tissue", "Regeneration"],
+    "pexels_keywords": ["tissue healing light", "repair acceleration energy", "ligament regeneration"],
+    "mood": "healing",
+    "binaural_offset": 5.1
+  },
+  {
+    "hz": 216,
+    "name": "216 Hz",
+    "title_name": "216 Hz | Spatial Awareness",
+    "benefit": "enhance spatial awareness and navigate life with clarity",
+    "short_benefit": "Spatial Clarity",
+    "description": "A frequency for enhanced perception and understanding of your place in the universe.",
+    "hooks": [
+      "216 Hz opens your spatial awareness to new levels of understanding...",
+      "Listen until the end — you see your path forward with crystal clarity.",
+      "Your perception of your journey is becoming infinitely clearer."
+    ],
+    "tags": ["216 Hz", "Awareness", "Perception", "Clarity", "Navigation"],
+    "pexels_keywords": ["spatial awareness perspective", "clarity path forward", "perception expansion vision"],
+    "mood": "awakening",
+    "binaural_offset": 5.4
+  },
+  {
+    "hz": 233,
+    "name": "233 Hz",
+    "title_name": "233 Hz | Emotional Release",
+    "benefit": "release trapped emotions and emotional blockages",
+    "short_benefit": "Emotional Freedom",
+    "description": "Designed to gently release suppressed emotions and emotional trauma.",
+    "hooks": [
+      "233 Hz releases emotions you've been holding onto for years...",
+      "Listen until the end — feel the emotional weight lifting away.",
+      "Your emotions are flowing freely and you are becoming light again."
+    ],
+    "tags": ["233 Hz", "Emotional Release", "Trauma Release", "Freedom", "Healing"],
+    "pexels_keywords": ["emotional release flowing tears", "freedom light joy", "emotional freedom expression"],
+    "mood": "liberation",
+    "binaural_offset": 5.3
+  },
+  {
+    "hz": 363,
+    "name": "363 Hz",
+    "title_name": "363 Hz | Transformational Power",
+    "benefit": "catalyze powerful transformation in all areas of life",
+    "short_benefit": "Transformation Catalyst",
+    "description": "A potent frequency for activating transformational power and life change.",
+    "hooks": [
+      "363 Hz catalyzes powerful transformation in your entire life...",
+      "Listen until the end — change is already happening at the quantum level.",
+      "This frequency is unlocking your transformational superpower."
+    ],
+    "tags": ["363 Hz", "Transformation", "Change", "Power", "Catalyst"],
+    "pexels_keywords": ["transformation power energy", "catalytic change light", "powerful transformation flow"],
+    "mood": "miracle",
+    "binaural_offset": 6.0
+  },
+  {
+    "hz": 384,
+    "name": "384 Hz",
+    "title_name": "384 Hz | Spiritual Vision",
+    "benefit": "activate spiritual vision and see beyond the veil",
+    "short_benefit": "Spiritual Vision",
+    "description": "A frequency for opening the third eye and accessing spiritual sight.",
+    "hooks": [
+      "384 Hz opens your spiritual vision and awakens your inner sight...",
+      "Listen until the end — you are seeing beyond the illusion of the physical world.",
+      "Your spiritual eyes are opening to hidden truths right now."
+    ],
+    "tags": ["384 Hz", "Spiritual Vision", "Third Eye", "Inner Sight", "Awareness"],
+    "pexels_keywords": ["spiritual vision light veil", "third eye awakening", "inner sight opening"],
+    "mood": "awakening",
+    "binaural_offset": 5.7
+  },
+  {
+    "hz": 456,
+    "name": "456 Hz",
+    "title_name": "456 Hz | DNA Activation",
+    "benefit": "activate dormant DNA strands and unlock your full potential",
+    "short_benefit": "DNA Activation",
+    "description": "A frequency for activating unused DNA and unlocking hidden human potential.",
+    "hooks": [
+      "456 Hz activates the dormant strands of your DNA right now...",
+      "Listen until the end — your full human potential is being unlocked.",
+      "Abilities you never knew existed are awakening within you."
+    ],
+    "tags": ["456 Hz", "DNA Activation", "Potential", "Human Evolution", "Awakening"],
+    "pexels_keywords": ["DNA activation light", "human potential awakening", "evolution consciousness glow"],
+    "mood": "miracle",
+    "binaural_offset": 6.1
+  },
+  {
+    "hz": 483,
+    "name": "483 Hz",
+    "title_name": "483 Hz | Problem Solving Genius",
+    "benefit": "unlock your problem-solving genius and creative solutions",
+    "short_benefit": "Solution Genius",
+    "description": "A frequency for accessing your innate problem-solving and creative intelligence.",
+    "hooks": [
+      "483 Hz unlocks your problem-solving genius right now...",
+      "Listen until the end — the solutions you seek are flowing to you effortlessly.",
+      "Your mind is operating at genius-level problem-solving capacity."
+    ],
+    "tags": ["483 Hz", "Problem Solving", "Genius", "Solutions", "Creativity"],
+    "pexels_keywords": ["genius solution light", "problem solving clarity", "creative breakthrough inspiration"],
+    "mood": "focus",
+    "binaural_offset": 5.8
+  },
+  {
+    "hz": 507,
+    "name": "507 Hz",
+    "title_name": "507 Hz | Cellular Vitality",
+    "benefit": "infuse every cell with vitality and youthful energy",
+    "short_benefit": "Cellular Vitality",
+    "description": "A frequency for revitalizing cells and restoring youthful energy throughout the body.",
+    "hooks": [
+      "507 Hz fills every cell with vibrant, youthful vitality...",
+      "Listen until the end — you are becoming more energized and alive.",
+      "Your cells are bursting with youthful energy and vitality right now."
+    ],
+    "tags": ["507 Hz", "Vitality", "Cellular Energy", "Youth", "Rejuvenation"],
+    "pexels_keywords": ["cellular vitality energy glow", "youthful vitality light", "vital life force energy"],
+    "mood": "healing",
+    "binaural_offset": 5.2
+  },
+  {
+    "hz": 531,
+    "name": "531 Hz",
+    "title_name": "531 Hz | Quantum Healing",
+    "benefit": "access quantum healing and multidimensional wellness",
+    "short_benefit": "Quantum Healing",
+    "description": "A frequency for accessing healing at the quantum and multidimensional level.",
+    "hooks": [
+      "531 Hz opens quantum healing portals throughout your entire being...",
+      "Listen until the end — you are being healed at the quantum level.",
+      "Every dimension of your being is being restored to perfect health."
+    ],
+    "tags": ["531 Hz", "Quantum Healing", "Multidimensional", "Quantum Physics", "Healing"],
+    "pexels_keywords": ["quantum healing light dimensional", "multidimensional healing energy", "quantum wellness glow"],
+    "mood": "miracle",
+    "binaural_offset": 6.2
+  },
+  {
+    "hz": 576,
+    "name": "576 Hz",
+    "title_name": "576 Hz | Universal Love Connection",
+    "benefit": "tap into universal love and divine connection",
+    "short_benefit": "Universal Love",
+    "description": "A frequency connecting you with the universal love frequency of creation.",
+    "hooks": [
+      "576 Hz connects you with the universal love of all existence...",
+      "Listen until the end — you are one with all that is.",
+      "Feel the infinite love of the universe flowing through your being."
+    ],
+    "tags": ["576 Hz", "Universal Love", "Divine Connection", "Unity", "Oneness"],
+    "pexels_keywords": ["universal love connection universe", "divine unity oneness", "cosmic love light"],
+    "mood": "divine",
+    "binaural_offset": 6.3
+  },
+  {
+    "hz": 618,
+    "name": "618 Hz",
+    "title_name": "618 Hz | Manifestation Power",
+    "benefit": "amplify your manifesting power and attract your desires",
+    "short_benefit": "Manifestation Amplifier",
+    "description": "A frequency for amplifying manifestation abilities and attracting your deepest desires.",
+    "hooks": [
+      "618 Hz amplifies your manifesting power a thousandfold...",
+      "Listen until the end — everything you desire is being drawn to you.",
+      "Your manifestation power is operating at maximum potential right now."
+    ],
+    "tags": ["618 Hz", "Manifestation", "Law of Attraction", "Desires", "Creation"],
+    "pexels_keywords": ["manifestation power attraction", "desire fulfillment light", "creation energy glow"],
+    "mood": "miracle",
+    "binaural_offset": 6.0
+  },
+  {
+    "hz": 741.3,
+    "name": "741.3 Hz",
+    "title_name": "741.3 Hz | Advanced Problem Solving",
+    "benefit": "solve complex problems with crystal clarity and wisdom",
+    "short_benefit": "Problem Resolution",
+    "description": "An enhanced version of 741 Hz for advanced problem-solving and clarity.",
+    "hooks": [
+      "741.3 Hz brings crystal clarity to even your most complex problems...",
+      "Listen until the end — the solutions are becoming obvious to you.",
+      "Your mind is operating at peak clarity and problem-solving power."
+    ],
+    "tags": ["741.3 Hz", "Problem Solving", "Clarity", "Wisdom", "Solutions"],
+    "pexels_keywords": ["clarity light vision resolution", "problem solution breakthrough", "wisdom understanding glow"],
+    "mood": "focus",
+    "binaural_offset": 5.9
+  },
+  {
+    "hz": 791,
+    "name": "791 Hz",
+    "title_name": "791 Hz | Soul-to-Soul Communication",
+    "benefit": "deepen communication with your soul and higher guidance",
+    "short_benefit": "Soul Communication",
+    "description": "A frequency for soul-to-soul communication and receiving divine wisdom.",
+    "hooks": [
+      "791 Hz opens direct communication with your soul and higher guidance...",
+      "Listen until the end — your soul is speaking to you with clarity.",
+      "You are hearing the truth of your divine nature right now."
+    ],
+    "tags": ["791 Hz", "Soul Communication", "Higher Guidance", "Wisdom", "Spiritual"],
+    "pexels_keywords": ["soul communication light", "higher guidance divine", "soul wisdom universe"],
+    "mood": "spiritual",
+    "binaural_offset": 6.2
+  },
+  {
+    "hz": 874,
+    "name": "874 Hz",
+    "title_name": "874 Hz | Profound Wisdom Access",
+    "benefit": "access profound wisdom and cosmic understanding",
+    "short_benefit": "Cosmic Wisdom",
+    "description": "A frequency for accessing universal wisdom and cosmic consciousness.",
+    "hooks": [
+      "874 Hz opens you to profound cosmic wisdom and understanding...",
+      "Listen until the end — you are accessing timeless universal knowledge.",
+      "The wisdom of the cosmos is flowing through your consciousness right now."
+    ],
+    "tags": ["874 Hz", "Wisdom", "Cosmic Consciousness", "Understanding", "Knowledge"],
+    "pexels_keywords": ["cosmic wisdom universe light", "universal knowledge consciousness", "profound understanding glow"],
+    "mood": "spiritual",
+    "binaural_offset": 6.3
   }
 ]

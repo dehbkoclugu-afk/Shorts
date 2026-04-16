@@ -146,13 +146,15 @@ def run(dry_run: bool = False, hz_override: float = None) -> None:
 
         # 3) Frekans sesi üret
         print(f"\n[freq_main] {topic['hz']} Hz ses üretiliyor...")
+        # Binaural offset: topic'ten al, yoksa 4.0 Hz default
+        binaural_offset = float(topic.get("binaural_offset", 4.0))
         audio_path = _step(
             "Ses üretimi",
             lambda: generate_frequency_audio(
                 hz=float(topic["hz"]),
                 output_mp3=FREQ_AUDIO_PATH,
                 duration_sec=62.0,
-                binaural_offset=4.0,
+                binaural_offset=binaural_offset,
                 ambient_ratio=0.08,
             ),
             topic["name"],
