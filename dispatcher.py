@@ -1,19 +1,24 @@
 """
-dispatcher.py — Smart content system dispatcher.
+dispatcher.py — Simple system selector based on environment variables.
 
-Kullanım:
-  python dispatcher.py Hz              # FREQ SHORTS günlük modunu etkinleştir
-  python dispatcher.py Hz --count 7    # 7 video queue'ya ekle ve günlük başlat
-  python dispatcher.py en              # WAR SHORTS ingilizce günlük modunu etkinleştir
-  python dispatcher.py tr              # WAR SHORTS türkçe günlük modunu etkinleştir
-  python dispatcher.py status          # Günlük görevlerin durumunu göster
-  python dispatcher.py stop            # Günlük görevleri durdur
+Kullanım (Local):
+  python dispatcher.py Hz --count 7     # FREQ SHORTS başlat (7 video queue'ya ekle)
+  python dispatcher.py en --count 10    # WAR SHORTS en başlat (10 video)
+  python dispatcher.py tr --count 10    # WAR SHORTS tr başlat (10 video)
+  python dispatcher.py status           # Hangi sistem aktif?
+
+GitHub Kullanımı:
+  Settings → Variables → ACTIVE_SYSTEM = "Hz" | "en" | "tr"
+
+  Workflow'lar otomatik olarak kontrol eder:
+  - daily.yml → ACTIVE_SYSTEM != "en/tr" ise skip
+  - freq_daily.yml → ACTIVE_SYSTEM != "Hz" ise skip
+  - Sadece aktif sistem çalışır!
 
 Sistem Yapısı:
-  - "Hz" → FREQ SHORTS (Solfeggio/Binaural beat frequencies)
-  - "en", "tr", vb. → WAR SHORTS (savaş/geopolitik haberleri)
-  - Her sistem kendi daily posting queue'suna sahip
-  - Otomatik planning ve scheduling
+  - "Hz" → FREQ SHORTS (Solfeggio frequencies)
+  - "en" → WAR SHORTS (English)
+  - "tr" → WAR SHORTS (Turkish)
 """
 
 import argparse
@@ -21,61 +26,45 @@ import json
 import os
 import sys
 from datetime import date, timedelta, datetime
-import time
 import subprocess
 
-# ─── Sistem tipleri ve yapılandırma ──────────────────────────────────────────
+# ─── Sistem tipleri ──────────────────────────────────────────────────────────
 
 SYSTEMS = {
     "Hz": {
         "name": "FREQ SHORTS",
-        "mode": "freq",
         "queue_file": "freq_scheduled_queue.json",
-        "used_file": "freq_used_topics.json",
         "batch_cmd": "freq_batch_producer.py",
-        "main_cmd": "freq_main.py",
         "env_var": "USE_FREQ_QUEUE",
     },
-    # Dil kodları War shorts için
     "en": {
         "name": "WAR SHORTS (English)",
-        "mode": "war",
         "queue_file": "war_scheduled_queue.json",
         "batch_cmd": "batch_producer.py",
-        "main_cmd": "main.py",
-        "env_var": "USE_QUEUE",
         "language": "en",
+        "env_var": "USE_QUEUE",
     },
     "tr": {
         "name": "WAR SHORTS (Türkçe)",
-        "mode": "war",
         "queue_file": "war_scheduled_queue_tr.json",
         "batch_cmd": "batch_producer.py",
-        "main_cmd": "main.py",
-        "env_var": "USE_QUEUE",
         "language": "tr",
+        "env_var": "USE_QUEUE",
     },
 }
 
-SCHEDULER_STATE_FILE = "dispatcher_scheduler.json"
 
+def get_active_system() -> str | None:
+    """GitHub environment variable'dan aktif sistemi oku."""
+    # Local'da var mı kontrol et
+    if os.path.exists(".env.local"):
+        try:
+            from dotenv import load_dotenv
+            load_dotenv(".env.local")
+        except:
+            pass
 
-def load_scheduler_state() -> dict:
-    """Scheduler durumunu yükle."""
-    if os.path.exists(SCHEDULER_STATE_FILE):
-        with open(SCHEDULER_STATE_FILE, "r", encoding="utf-8") as f:
-            return json.load(f)
-    return {
-        "active_systems": [],
-        "scheduled_tasks": {},
-        "last_runs": {},
-    }
-
-
-def save_scheduler_state(state: dict) -> None:
-    """Scheduler durumunu kaydet."""
-    with open(SCHEDULER_STATE_FILE, "w", encoding="utf-8") as f:
-        json.dump(state, f, indent=2, ensure_ascii=False)
+    return os.environ.get("ACTIVE_SYSTEM", "").strip() or None
 
 
 def load_queue(system_key: str) -> list:
@@ -113,27 +102,18 @@ def get_next_scheduled(system_key: str) -> dict | None:
 
 
 def enable_daily_mode(system_key: str, count: int = 7) -> None:
-    """Bir sistem için günlük modu etkinleştir (diğerleri otomatik devre dışı bırakılır)."""
+    """Sistem için queue oluştur ve GitHub variable'da belirt."""
     if system_key not in SYSTEMS:
         print(f"❌ Bilinmeyen sistem: {system_key}")
         return
 
     config = SYSTEMS[system_key]
-    state = load_scheduler_state()
 
-    # 1) DİĞER SİSTEMLERİ DEVRE DIŞI BIR (sadece biri active olabilir)
-    print(f"\n🔄 Diğer sistemler devre dışı bırakılıyor...")
-    for other_key in SYSTEMS.keys():
-        if other_key != system_key and other_key in state["active_systems"]:
-            state["active_systems"].remove(other_key)
-            other_config = SYSTEMS[other_key]
-            print(f"   ⚫ {other_config['name']} kapatıldı")
-
-    print(f"\n🚀 {config['name']} — Günlük Modu Etkinleştiriliyor...")
+    print(f"\n🚀 {config['name']} — Queue Oluşturuluyor...")
     print(f"   {count} video kuyruğa eklenecek")
     print(f"   Queue: {config['queue_file']}")
 
-    # 2) Queue'yu doldur
+    # 1) Queue'yu oluştur (batch producer çalıştır)
     if system_key == "Hz":
         cmd = f"python {config['batch_cmd']} --count {count}"
     else:
@@ -150,24 +130,14 @@ def enable_daily_mode(system_key: str, count: int = 7) -> None:
 
     print(result.stdout)
 
-    # 3) Sistemi active etkinleştir
-    if system_key not in state["active_systems"]:
-        state["active_systems"].append(system_key)
+    # 2) .env.local'a ACTIVE_SYSTEM yaz (local testing için)
+    with open(".env.local", "w", encoding="utf-8") as f:
+        f.write(f"ACTIVE_SYSTEM={system_key}\n")
 
-    # 4) Scheduler durumunu güncelle
-    state["scheduled_tasks"][system_key] = {
-        "enabled": True,
-        "enabled_at": datetime.now().isoformat(),
-        "mode": "daily",
-        "next_run": str(date.today()),
-    }
-
-    save_scheduler_state(state)
-
-    # 5) Queue'yi göster
+    # 3) Queue'yi göster
     queue = load_queue(system_key)
     if queue:
-        print(f"\n✅ {config['name']} Günlük Modu Başarıyla Etkinleştirildi!")
+        print(f"\n✅ {config['name']} Queue Başarıyla Oluşturuldu!")
         print(f"\n📅 Kuyruktaki videolar:")
         for item in queue[:5]:
             status = "✅ Yayınlandı" if item.get("published") else "⏳ Beklemede"
@@ -177,46 +147,44 @@ def enable_daily_mode(system_key: str, count: int = 7) -> None:
 
         if len(queue) > 5:
             print(f"   ... ve {len(queue) - 5} daha")
+
+        print(f"\n⚙️  GitHub Settings → Variables:")
+        print(f"   ACTIVE_SYSTEM = \"{system_key}\"")
+        print(f"   (Workflow'lar bunu kontrol eder)")
     else:
         print(f"⚠️  Queue boş — batch producer hata vermiş olabilir")
 
 
 def disable_daily_mode(system_key: str) -> None:
-    """Bir sistem için günlük modu devre dışı bırak."""
+    """Sistemi devre dışı bırak."""
     if system_key not in SYSTEMS:
         print(f"❌ Bilinmeyen sistem: {system_key}")
         return
 
     config = SYSTEMS[system_key]
-    state = load_scheduler_state()
 
-    if system_key in state["active_systems"]:
-        state["active_systems"].remove(system_key)
+    # .env.local'ı kaldır
+    if os.path.exists(".env.local"):
+        os.remove(".env.local")
 
-    state["scheduled_tasks"][system_key] = {
-        "enabled": False,
-        "disabled_at": datetime.now().isoformat(),
-    }
-
-    save_scheduler_state(state)
-    print(f"✅ {config['name']} günlük modu devre dışı bırakıldı")
+    print(f"✅ {config['name']} devre dışı bırakıldı")
+    print(f"   GitHub Settings → Variables:")
+    print(f"   ACTIVE_SYSTEM = \"\" (boş)")
+    print(f"   (Tüm workflow'lar skip edilecek)")
 
 
 def show_status() -> None:
     """Tüm sistemlerin durumunu göster."""
-    state = load_scheduler_state()
-
-    active_count = len(state["active_systems"])
-    active_sys = state["active_systems"][0] if state["active_systems"] else None
+    active_sys = get_active_system()
 
     print("\n" + "=" * 60)
     print("🎬 DISPATCHER STATUS")
     print("=" * 60)
-    print(f"\n📡 Aktif Daily Sistem: {SYSTEMS[active_sys]['name'] if active_sys else '❌ NONE'}")
+    print(f"\n📡 Aktif Daily Sistem: {SYSTEMS[active_sys]['name'] if active_sys else '❌ NONE (Tüm workflow skip)'}")
     print(f"   (Sadece BİR sistem aynı anda daily atabilir)\n")
 
     for system_key, config in SYSTEMS.items():
-        is_active = system_key in state["active_systems"]
+        is_active = active_sys == system_key
         status = "🟢 ACTIVE" if is_active else "⚫ INACTIVE"
 
         queue = load_queue(system_key)
@@ -233,10 +201,6 @@ def show_status() -> None:
         else:
             print(f"  Sonraki: Queue boş")
 
-        task_info = state["scheduled_tasks"].get(system_key, {})
-        if task_info.get("enabled_at"):
-            print(f"  Etkinleştirildi: {task_info['enabled_at']}")
-
     print("\n" + "=" * 60)
 
 
@@ -244,42 +208,55 @@ def show_help() -> None:
     """Yardım bilgisini göster."""
     print("""
 ╔════════════════════════════════════════════════════════════╗
-║           🎬 DISPATCHER — Smart Content System            ║
+║           🎬 DISPATCHER — Simple System Selector          ║
 ╚════════════════════════════════════════════════════════════╝
 
 KULLANIM:
-  python dispatcher.py Hz                # Freq Shorts günlük modunu etkinleştir
-  python dispatcher.py Hz --count 7      # 7 video ekle ve başlat
-  python dispatcher.py en                # War Shorts (İngilizce) etkinleştir
-  python dispatcher.py tr                # War Shorts (Türkçe) etkinleştir
-  python dispatcher.py status            # Tüm sistemlerin durumunu göster
-  python dispatcher.py Hz stop           # Freq Shorts günlük modunu durdur
-  python dispatcher.py help              # Bu yardım mesajını göster
+  python dispatcher.py Hz                # FREQ queue oluştur
+  python dispatcher.py Hz --count 7      # 7 video ekle
+  python dispatcher.py en                # WAR queue (English) oluştur
+  python dispatcher.py tr                # WAR queue (Turkish) oluştur
+  python dispatcher.py status            # Hangi sistem aktif?
+  python dispatcher.py Hz stop           # Sistemi kapat
+  python dispatcher.py help              # Bu yardım
 
 SİSTEMLER:
   Hz    → FREQ SHORTS (Solfeggio/Binaural Beats)
   en    → WAR SHORTS (English)
   tr    → WAR SHORTS (Türkçe)
 
-GÜNLÜK MOD:
-  • Otomatik video queue'su oluşturur
-  • Belirtilen tarihten itibaren günde 1 video yayınlar
-  • Queue'yu isteğe bağlı olarak yeniden doldurabilirsiniz
-  • SADECE BİR sistem aynı anda daily atabilir
-  • Yeni sistem etkinleştirirseniz önceki otomatik kapatılır
+NASIL ÇALIŞIR:
+  1. python dispatcher.py Hz --count 7
+     ↓ Queue dosyası oluşturulur: freq_scheduled_queue.json
+     ↓ .env.local'a ACTIVE_SYSTEM=Hz yazılır
+
+  2. GitHub Settings → Variables → ACTIVE_SYSTEM="Hz" ayarla
+     ↓ (ya da otomatik GitHub Actions'dan kontrol et)
+
+  3. daily.yml / freq_daily.yml bunu kontrol eder:
+     ↓ if ACTIVE_SYSTEM == "Hz" → freq_main.py çalış
+     ↓ if ACTIVE_SYSTEM == "en" → main.py çalış
+
+  4. Otomatik yayın her gün belirlenen saatte!
 
 ÖRNEKLER:
-  # Freq Shorts'u 7 video ile başlat
+  # Freq Shorts başlat (7 video)
   python dispatcher.py Hz --count 7
 
-  # War Shorts İngilizce'yi 10 video ile başlat
+  # War Shorts English başlat (10 video)
   python dispatcher.py en --count 10
 
   # Durumu kontrol et
   python dispatcher.py status
 
-  # Freq Shorts'u durdur
+  # Sistemi kapat
   python dispatcher.py Hz stop
+
+ÖNEMLI:
+  • SADECE BİR sistem aktif olabilir
+  • GitHub Settings → Variables → ACTIVE_SYSTEM = "Hz"|"en"|"tr"
+  • Workflow'lar otomatik olarak kontrol eder ve çalıştırır
+  • Queue boşaldığında dispatcher.py ile yeniden dolduabilirsin
 """)
 
 
