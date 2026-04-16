@@ -51,6 +51,13 @@ SYSTEMS = {
         "language": "tr",
         "env_var": "USE_QUEUE",
     },
+    "ar": {
+        "name": "WAR SHORTS (العربية)",
+        "queue_file": "war_scheduled_queue_ar.json",
+        "batch_cmd": "batch_producer.py",
+        "language": "ar",
+        "env_var": "USE_QUEUE",
+    },
 }
 
 
@@ -216,6 +223,7 @@ KULLANIM:
   python dispatcher.py Hz --count 7      # 7 video ekle
   python dispatcher.py en                # WAR queue (English) oluştur
   python dispatcher.py tr                # WAR queue (Turkish) oluştur
+  python dispatcher.py ar                # WAR queue (Arabic) oluştur
   python dispatcher.py status            # Hangi sistem aktif?
   python dispatcher.py Hz stop           # Sistemi kapat
   python dispatcher.py help              # Bu yardım
@@ -224,6 +232,7 @@ SİSTEMLER:
   Hz    → FREQ SHORTS (Solfeggio/Binaural Beats)
   en    → WAR SHORTS (English)
   tr    → WAR SHORTS (Türkçe)
+  ar    → WAR SHORTS (العربية)
 
 NASIL ÇALIŞIR:
   1. python dispatcher.py Hz --count 7
@@ -245,6 +254,9 @@ NASIL ÇALIŞIR:
 
   # War Shorts English başlat (10 video)
   python dispatcher.py en --count 10
+
+  # War Shorts Arapça başlat (10 video)
+  python dispatcher.py ar --count 10
 
   # Durumu kontrol et
   python dispatcher.py status
