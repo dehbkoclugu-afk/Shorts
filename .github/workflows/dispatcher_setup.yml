@@ -1,0 +1,109 @@
+name: Dispatcher — Queue Setup
+
+on:
+  workflow_dispatch:
+    inputs:
+      system:
+        description: 'Hangi sistem başlatılsın?'
+        required: true
+        type: choice
+        options:
+          - Hz (FREQ SHORTS)
+          - en (WAR SHORTS - English)
+          - tr (WAR SHORTS - Türkçe)
+          - ar (WAR SHORTS - العربية)
+      count:
+        description: 'Kuyruğa kaç video eklensin?'
+        required: false
+        default: '7'
+        type: string
+      action:
+        description: 'İşlem'
+        required: true
+        type: choice
+        options:
+          - enable (Queue oluştur ve aktifleştir)
+          - status (Durumu göster)
+          - stop (Sistemi kapat)
+        default: 'enable'
+
+jobs:
+  setup-queue:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update -qq
+          sudo apt-get install -y ffmpeg imagemagick fonts-liberation fonts-noto-core
+          pip install -r requirements.txt
+
+      - name: Extract system code
+        id: parse
+        run: |
+          FULL="${{ github.event.inputs.system }}"
+          SYSTEM=$(echo "$FULL" | cut -d' ' -f1)
+          echo "system=$SYSTEM" >> $GITHUB_OUTPUT
+          echo "full=$FULL" >> $GITHUB_OUTPUT
+
+      - name: Run dispatcher enable
+        if: github.event.inputs.action == 'enable (Queue oluştur ve aktifleştir)'
+        run: |
+          python dispatcher.py ${{ steps.parse.outputs.system }} --count ${{ github.event.inputs.count }}
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          PEXELS_API_KEY: ${{ secrets.PEXELS_API_KEY }}
+          YOUTUBE_TOKEN_JSON: ${{ secrets.YOUTUBE_TOKEN_JSON }}
+
+      - name: Run dispatcher status
+        if: github.event.inputs.action == 'status (Durumu göster)'
+        run: |
+          python dispatcher.py status
+
+      - name: Run dispatcher stop
+        if: github.event.inputs.action == 'stop (Sistemi kapat)'
+        run: |
+          python dispatcher.py ${{ steps.parse.outputs.system }} stop
+
+      - name: Commit changes
+        if: github.event.inputs.action == 'enable (Queue oluştur ve aktifleştir)'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Queue dosyalarını commit et
+          git add war_scheduled_queue*.json freq_scheduled_queue.json .env.local 2>/dev/null || true
+
+          SYSTEM=${{ steps.parse.outputs.system }}
+          COUNT=${{ github.event.inputs.count }}
+
+          git diff --cached --quiet || git commit -m "chore: dispatcher setup - $SYSTEM with $COUNT videos"
+
+          git pull --rebase origin $(git rev-parse --abbrev-ref HEAD) || true
+          git push origin HEAD || true
+
+      - name: Show output
+        if: always()
+        run: |
+          echo ""
+          echo "================================"
+          echo "✅ Dispatcher Tamamlandı!"
+          echo "================================"
+          echo ""
+          echo "Sistem: ${{ steps.parse.outputs.full }}"
+          echo "İşlem: ${{ github.event.inputs.action }}"
+          echo ""
+          echo "📝 Sonraki adım:"
+          echo "  Settings → Variables → ACTIVE_SYSTEM"
+          echo "  Değer: '${{ steps.parse.outputs.system }}'"
+          echo ""
+          echo "Workflow logs for details: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}"
