@@ -1,7 +1,9 @@
 name: FREQ SHORTS — Daily Pipeline
 
 on:
-  workflow_dispatch:        # Sadece manuel tetikleme
+  schedule:
+    - cron: '0 1 * * *'    # Her gün 01:00 UTC
+  workflow_dispatch:        # Manuel tetikleme
     inputs:
       hz:
         description: 'Belirli bir Hz değeri (boş bırakılırsa otomatik seçilir)'
@@ -14,7 +16,27 @@ on:
         type: boolean
 
 jobs:
+  check-active-system:
+    runs-on: ubuntu-latest
+    outputs:
+      should-run: ${{ steps.check.outputs.should-run }}
+    steps:
+      - name: Check if FREQ SHORTS is active
+        id: check
+        run: |
+          ACTIVE=${{ vars.ACTIVE_SYSTEM }}
+          if [[ "$ACTIVE" == "Hz" ]]; then
+            echo "should-run=true" >> $GITHUB_OUTPUT
+          else
+            echo "should-run=false" >> $GITHUB_OUTPUT
+            echo "⚫ FREQ SHORTS not active. ACTIVE_SYSTEM=$ACTIVE"
+          fi
+
   run-freq-pipeline:
+    needs: check-active-system
+    if: |
+      needs.check-active-system.outputs.should-run == 'true' ||
+      github.event_name == 'workflow_dispatch'
     runs-on: ubuntu-latest
     timeout-minutes: 30
 
