@@ -192,5 +192,102 @@
     "video_path": null,
     "published": false,
     "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-20",
+    "topic": "Iran's Drone Army: How They Changed the Middle East",
+    "title": "2024: 5000 طائرة مسيرة إيرانية تهدد إسرائيل",
+    "script_path": "batch_output/2026-04-20/script.json",
+    "video_path": "batch_output/2026-04-20/short.mp4",
+    "audio_path": "batch_output/2026-04-20/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-20/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "هل فعلاً إيران تتفوق؟ 🇮🇷🤔\nA) نعم، دفاعات إسرائيل ضعيفة.\nB) لا، إسرائيل لديها حلول سرية.\nC) حرب إلكترونية ستحدد المصير!\n\nOnly 10% will guess correctly! 👇",
+      "community_poll": {
+        "text": "🔥 After watching today's analysis on 2024: 5000 طائرة مسيرة إيرانية تهدد إسرا... What's YOUR prediction?",
+        "poll_options": [
+          "Full escalation 💥",
+          "Diplomatic solution 🤝",
+          "Status quo continues",
+          "Something nobody expects 🔮"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🔮 CRYSTAL BALL TIME: 2024: 5000 طائرة مسيرة إيرانية تهدد إسرا\n\nComment your wildest theory about what happens next.\nWrong answers only 😂👇"
+    },
+    "score": 43
+  },
+  {
+    "scheduled_date": "2026-04-21",
+    "topic": "What if Iran Closes the Strait of Hormuz Tomorrow?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-22",
+    "topic": "What if Israel and Iran Go to Full-Scale War?",
+    "title": "مرعب: حرب إسرائيل وإيران ستندلع قريباً!",
+    "script_path": "batch_output/2026-04-22/script.json",
+    "video_path": "batch_output/2026-04-22/short.mp4",
+    "audio_path": "batch_output/2026-04-22/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-22/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "⚡ Hot take: What happens next?\n\n🔴 Full-scale war\n🟡 Cold war standoff\n🟢 Peace deal\n\nVote below! Most get this WRONG 👇",
+      "community_poll": {
+        "text": "🔥 After watching today's analysis on مرعب: حرب إسرائيل وإيران ستندلع قريباً!... What's YOUR prediction?",
+        "poll_options": [
+          "Full escalation 💥",
+          "Diplomatic solution 🤝",
+          "Status quo continues",
+          "Something nobody expects 🔮"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🎯 PREDICTION GAME: What happens by end of 2026?\n\nDrop your prediction — I'll pin the best one! 📌\n\nMost creative prediction wins a shoutout! 🏆"
+    },
+    "score": 41
+  },
+  {
+    "scheduled_date": "2026-04-23",
+    "topic": "What if Israel Strikes Iran's Nuclear Facilities?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-24",
+    "topic": "Iran's Proxy Network: The Most Powerful Non-State Military in the World",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-25",
+    "topic": "What if Iran and Saudi Arabia Go to Full War?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-26",
+    "topic": "What if the Gulf States Unite Against Iran?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
   }
 ]
