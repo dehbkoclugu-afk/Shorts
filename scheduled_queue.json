@@ -289,5 +289,85 @@
     "video_path": null,
     "published": false,
     "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-27",
+    "topic": "[NEWS] Why Netanyahu orders army to 'vigorously attack' Hezbollah in Lebanon Changes Everything",
+    "title": "خطير: نتنياهو يأمر جيشه بشن هجوم عنيف على لبنان!",
+    "script_path": "batch_output/2026-04-27/script.json",
+    "video_path": "batch_output/2026-04-27/short.mp4",
+    "audio_path": "batch_output/2026-04-27/narration.mp3",
+    "thumbnail_path": "batch_output/2026-04-27/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "🔥 Bold prediction time: How does this end?\n\nA) Escalation 💥\nB) Diplomacy 🤝\nC) Surprise twist 🔄\n\nDrop your answer! 👇",
+      "community_poll": {
+        "text": "The IDF's potential offensive in Lebanon is a game-changer. What's the most likely outcome? 🤔🇮🇱",
+        "poll_options": [
+          "Swift IDF victory",
+          "Hezbollah holds",
+          "Regional escalation",
+          "Stalemate"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🔮 CRYSTAL BALL TIME: خطير: نتنياهو يأمر جيشه بشن هجوم عنيف عل\n\nComment your wildest theory about what happens next.\nWrong answers only 😂👇"
+    },
+    "score": 32
+  },
+  {
+    "scheduled_date": "2026-04-28",
+    "topic": "What if Iran Closes the Strait of Hormuz Tomorrow?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-29",
+    "topic": "What if Hezbollah Launches 100,000 Rockets at Israel at Once?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-04-30",
+    "topic": "Iran's Hypersonic Missile Program: Should the World Worry?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-01",
+    "topic": "Iran vs Israel: The Shadow War Nobody Talks About",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-02",
+    "topic": "What if Iran and Saudi Arabia Go to Full War?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-03",
+    "topic": "What if the Gulf States Unite Against Iran?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
   }
 ]
