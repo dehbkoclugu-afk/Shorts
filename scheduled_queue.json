@@ -369,5 +369,102 @@
     "video_path": null,
     "published": false,
     "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-04",
+    "topic": "[NEWS] What Concern for jailed Iranian Nobel laureate as family say health deterio Really Means for the Future",
+    "title": "كارثة صحية لنرجس محمدي؟ 3 أسباب تدعو للقلق",
+    "script_path": "batch_output/2026-05-04/script.json",
+    "video_path": "batch_output/2026-05-04/short.mp4",
+    "audio_path": "batch_output/2026-05-04/narration.mp3",
+    "thumbnail_path": "batch_output/2026-05-04/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "هل صحة نرجس محمدي ورقة ضغط إسرائيلية؟ 🤔\n\nA) نعم، بالتأكيد 🇮🇱\nB) لا، مجرد قضية إنسانية 😔\n\nفقط 10% يدركون الحقيقة... شاركنا رأيك! 👇",
+      "community_poll": {
+        "text": "Is Narges Mohammadi's situation a political tool or a genuine health crisis? 🤔 Your take matters! 👇",
+        "poll_options": [
+          "Political pawn",
+          "Real health issue",
+          "Both are true",
+          "Uncertain"
+        ]
+      },
+      "debate_starter": "هل قلق الغرب على صحتها مجرد قناع للتدخل السياسي؟ 🤔",
+      "prediction_game": "🎯 PREDICTION GAME: What happens by end of 2026?\n\nDrop your prediction — I'll pin the best one! 📌\n\nMost creative prediction wins a shoutout! 🏆"
+    },
+    "score": 38
+  },
+  {
+    "scheduled_date": "2026-05-05",
+    "topic": "[NEWS] Why The Iran war has strengthened Ukraine in surprising ways. Could a ceas Changes Everything",
+    "title": "2024: حرب إيران تمنح أوكرانيا أسلحة!",
+    "script_path": "batch_output/2026-05-05/script.json",
+    "video_path": "batch_output/2026-05-05/short.mp4",
+    "audio_path": "batch_output/2026-05-05/narration.mp3",
+    "thumbnail_path": "batch_output/2026-05-05/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "Only 10% get this right... 🤔 Will Iran's conflict *really* arm Ukraine? 🇺🇦\n\nA) Yes, it's a strategic advantage!\nB) No, too risky for NATO.\nC) It's a distraction!\n\nVote below! 👇",
+      "community_poll": {
+        "text": "Is Iran supplying weapons to Ukraine a game-changer for the war? 🤯 Let's discuss!",
+        "poll_options": [
+          "Massive impact",
+          "Minor effect",
+          "No real change",
+          "Just propaganda"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🔮 CRYSTAL BALL TIME: 2024: حرب إيران تمنح أوكرانيا أسلحة!\n\nComment your wildest theory about what happens next.\nWrong answers only 😂👇"
+    },
+    "score": 39
+  },
+  {
+    "scheduled_date": "2026-05-06",
+    "topic": "[NEWS] The clandestine network smuggling Starlink tech into Iran to beat inte: The Analysis Nobody Is Giving You",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-07",
+    "topic": "Iran's Proxy Network: The Most Powerful Non-State Military in the World",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-08",
+    "topic": "Iran's Hypersonic Missile Program: Should the World Worry?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-09",
+    "topic": "UAE vs Iran: The Hidden Arms Race in the Gulf",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-10",
+    "topic": "What if Iran Gets Nuclear Weapons?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
   }
 ]
