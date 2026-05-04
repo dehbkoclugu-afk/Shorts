@@ -193,23 +193,13 @@ def run(dry_run: bool = False, hz_override: float = None) -> None:
     print("\n[freq_main] YouTube'a yükleniyor...")
     from uploader import upload_video, build_description
 
-    base_tags = [
-        "Neuro-Frequency", "Neural Frequency", "Healing Frequency", "Meditation Music",
-        "Binaural Beats", "Solfeggio Frequencies", "Nervous System", "Brain Waves",
-        "Sound Therapy", "Shorts",
-    ]
+    base_tags = ["Solfeggio Frequencies", "Healing Frequency", "Meditation Music",
+                 "Binaural Beats", "Sleep Music", "Relaxation", "Shorts"]
     upload_tags = list(dict.fromkeys(script["tags"] + base_tags))
 
-    hz_val = script.get("hz", "")
-    short_benefit = script.get("short_benefit", "")
-    description_fallback = (
-        f"{script['title']}\n\n"
-        f"{short_benefit} — {script.get('freq_name', f'{hz_val} Hz')} neuro-frequency session.\n\n"
-        f"🎧 Use headphones for full binaural effect.\n\n"
-        f"Follow for daily neuro-frequency sessions.\n\n"
-        f"#NeuralFrequency #NeuroFrequency #HealingFrequency #MeditationMusic #BinauralBeats #Shorts"
-    )
-    description = script.get("description") or description_fallback
+    # build_description WAR SHORTS scriptleri için tasarlandı —
+    # frekans scripti için basit açıklama kullan
+    description = script.get("description", f"{script['title']}\n\n#HealingFrequency #Meditation")
 
     video_id = _step(
         "YouTube upload",
