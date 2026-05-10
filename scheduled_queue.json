@@ -466,5 +466,119 @@
     "video_path": null,
     "published": false,
     "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-11",
+    "topic": "[NEWS] Why Iran accuses US of 'reckless military adventure' Changes Everything",
+    "title": "3 أسباب لأزمة أمريكا وإيران الآن",
+    "script_path": "batch_output/2026-05-11/script.json",
+    "video_path": "batch_output/2026-05-11/short.mp4",
+    "audio_path": "batch_output/2026-05-11/narration.mp3",
+    "thumbnail_path": "batch_output/2026-05-11/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "هل أمريكا تستدرج إيران لحرب؟ 🤔\nA) نعم، أجندة خفية\nB) لا، مجرد تصريحات\nC) محايد/لا أعرف\nOnly 10% know the real reason! 👇",
+      "community_poll": {
+        "text": "Who's REALLY in control of the Middle East's future? 🤔 The US 🇺🇸 or Iran 🇮🇷?",
+        "poll_options": [
+          "US Dominance",
+          "Iran's Rise",
+          "Mutual Stalemate",
+          "Regional Powers"
+        ]
+      },
+      "debate_starter": "أمريكا تخلق الأزمات للسيطرة، وليس لحل المشاكل. هل سيستمر هذا النمط؟ 🤔",
+      "prediction_game": "🎯 PREDICTION GAME: What happens by end of 2026?\n\nDrop your prediction — I'll pin the best one! 📌\n\nMost creative prediction wins a shoutout! 🏆"
+    },
+    "score": 37
+  },
+  {
+    "scheduled_date": "2026-05-12",
+    "topic": "What if Iran and Saudi Arabia Go to Full War?",
+    "title": "70% من نفط العالم مهدد: حرب إيران والسعودية!",
+    "script_path": "batch_output/2026-05-12/script.json",
+    "video_path": "batch_output/2026-05-12/short.mp4",
+    "audio_path": "batch_output/2026-05-12/narration.mp3",
+    "thumbnail_path": "batch_output/2026-05-12/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "⚡ Hot take: What happens next?\n\n🔴 Full-scale war\n🟡 Cold war standoff\n🟢 Peace deal\n\nVote below! Most get this WRONG 👇",
+      "community_poll": {
+        "text": "🔥 After watching today's analysis on 70% من نفط العالم مهدد: حرب إيران والسعو... What's YOUR prediction?",
+        "poll_options": [
+          "Full escalation 💥",
+          "Diplomatic solution 🤝",
+          "Status quo continues",
+          "Something nobody expects 🔮"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🔮 CRYSTAL BALL TIME: 70% من نفط العالم مهدد: حرب إيران والسعو\n\nComment your wildest theory about what happens next.\nWrong answers only 😂👇"
+    },
+    "score": 39
+  },
+  {
+    "scheduled_date": "2026-05-13",
+    "topic": "[NEWS] Staple Food Prices Soar In Iran As Inflation Hits 'Unprecedented Level: Here's What It Means for the World",
+    "title": "صادم: أسعار الغذاء في إيران ترتفع لمستوى كارثي!",
+    "script_path": "batch_output/2026-05-13/script.json",
+    "video_path": "batch_output/2026-05-13/short.mp4",
+    "audio_path": "batch_output/2026-05-13/narration.mp3",
+    "thumbnail_path": "batch_output/2026-05-13/thumbnail.png",
+    "language": "ar",
+    "published": false,
+    "engagement_pack": {
+      "pinned_comment": "🎯 Prediction challenge: Only 5% get this right!\n\nWhat's the REAL endgame here? Comment your theory 👇",
+      "community_poll": {
+        "text": "🔥 After watching today's analysis on صادم: أسعار الغذاء في إيران ترتفع لمستوى... What's YOUR prediction?",
+        "poll_options": [
+          "Full escalation 💥",
+          "Diplomatic solution 🤝",
+          "Status quo continues",
+          "Something nobody expects 🔮"
+        ]
+      },
+      "debate_starter": "",
+      "prediction_game": "🧠 INTEL TEST: Based on this briefing...\n\nWhat would YOU do as commander-in-chief?\nMost strategic answer wins! 🎖️👇"
+    },
+    "score": 32
+  },
+  {
+    "scheduled_date": "2026-05-14",
+    "topic": "[NEWS] What Iran war day 72 Really Means for the Future",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-15",
+    "topic": "What if Hezbollah Launches 100,000 Rockets at Israel at Once?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-16",
+    "topic": "What if the Gulf States Unite Against Iran?",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
+  },
+  {
+    "scheduled_date": "2026-05-17",
+    "topic": "Iran vs Israel: The Shadow War Nobody Talks About",
+    "title": "?",
+    "script_path": null,
+    "video_path": null,
+    "published": false,
+    "error": "Tüm script üretim denemeleri başarısız oldu."
   }
 ]
