@@ -65,6 +65,24 @@ jobs:
           restore-keys: |
             freq-seen-pexels-
 
+      - name: Restore adhd_used_topics cache
+        if: ${{ vars.LANGUAGE == 'adhd' }}
+        uses: actions/cache@v4
+        with:
+          path: adhd_used_topics.json
+          key: adhd-used-topics-${{ github.run_id }}
+          restore-keys: |
+            adhd-used-topics-
+
+      - name: Restore adhd_seen_pexels_ids cache
+        if: ${{ vars.LANGUAGE == 'adhd' }}
+        uses: actions/cache@v4
+        with:
+          path: output/adhd_seen_pexels_ids.json
+          key: adhd-seen-pexels-${{ github.run_id }}
+          restore-keys: |
+            adhd-seen-pexels-
+
       - name: Setup Python 3.11
         uses: actions/setup-python@v5
         with:
@@ -131,6 +149,9 @@ jobs:
           if [ "$LANGUAGE" = "hz" ]; then
             echo "=== MODE: FREQ SHORTS (LANGUAGE=hz) ==="
             python freq_main.py
+          elif [ "$LANGUAGE" = "adhd" ]; then
+            echo "=== MODE: ADHD FOCUS SHORTS (LANGUAGE=adhd) ==="
+            python adhd_main.py
           else
             echo "=== MODE: WAR SHORTS (LANGUAGE=$LANGUAGE) ==="
             python main.py
@@ -219,6 +240,20 @@ jobs:
           path: output/freq_seen_pexels_ids.json
           key: freq-seen-pexels-${{ github.run_id }}
 
+      - name: Save adhd_used_topics cache
+        if: ${{ always() && vars.LANGUAGE == 'adhd' }}
+        uses: actions/cache@v4
+        with:
+          path: adhd_used_topics.json
+          key: adhd-used-topics-${{ github.run_id }}
+
+      - name: Save adhd_seen_pexels_ids cache
+        if: ${{ always() && vars.LANGUAGE == 'adhd' }}
+        uses: actions/cache@v4
+        with:
+          path: output/adhd_seen_pexels_ids.json
+          key: adhd-seen-pexels-${{ github.run_id }}
+
       - name: Commit state files to git (kalıcı dedup)
         if: always()
         run: |
@@ -228,6 +263,10 @@ jobs:
             git add freq_used_topics.json || true
             git add output/freq_seen_pexels_ids.json || true
             git diff --cached --quiet || git commit -m "chore: update freq state after daily run [skip ci]"
+          elif [ "$LANGUAGE" = "adhd" ]; then
+            git add adhd_used_topics.json || true
+            git add output/adhd_seen_pexels_ids.json || true
+            git diff --cached --quiet || git commit -m "chore: update adhd state after daily run [skip ci]"
           else
             git add used_topics.json
             git diff --cached --quiet || git commit -m "chore: update used_topics after daily run [skip ci]"

@@ -1,0 +1,332 @@
+[
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — ADHD Deep Work",
+    "title_name": "40Hz Gamma | ADHD Deep Work | Brown Noise | Pomodoro",
+    "benefit": "activate gamma brainwaves for sustained ADHD focus and deep work sessions",
+    "short_benefit": "ADHD Deep Work",
+    "description": "40Hz gamma binaural beats paired with brown noise scientifically shown to support ADHD focus. Based on Nigg et al. 2024 meta-analysis and MIT Picower Tsai Lab GENUS research. Ideal for Pomodoro sessions, coding, and sustained concentration.",
+    "hooks": [
+      "Your ADHD brain runs on dopamine. 40Hz gamma is giving it what it needs right now.",
+      "40Hz is activating your prefrontal cortex. Stay until the end — feel the shift.",
+      "Scientists found this specific frequency helps ADHD brains focus. Let it work."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Gamma Waves",
+      "Binaural Beats", "Deep Work", "Pomodoro", "Focus Music", "ADHD Brain",
+      "Concentration", "Neuroscience", "MIT Research", "Cognitive Enhancement"
+    ],
+    "pexels_keywords": [
+      "brain network neurons",
+      "dark minimal desk workspace",
+      "focused person laptop coding",
+      "neon glow dark background",
+      "neural network visualization",
+      "person studying focused night",
+      "minimalist office dark",
+      "code screen developer night"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "Nigg 2024"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — Coding Focus",
+    "title_name": "40Hz Gamma | Coding Focus | ADHD Brain | Brown Noise",
+    "benefit": "enter deep coding flow state with 40Hz gamma and brown noise background",
+    "short_benefit": "Coding Flow",
+    "description": "40Hz gamma binaural beats with brown noise for developers and programmers with ADHD. MIT Picower Lab research shows 40Hz stimulation strengthens attention networks. Designed for long coding sessions without distractions.",
+    "hooks": [
+      "Built by a developer with ADHD. This 40Hz frequency changed how I code.",
+      "40Hz gamma is activating your attention network right now. Keep coding.",
+      "Your developer brain on 40Hz gamma — less context switching, more flow."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Coding Music",
+      "Developer Focus", "Programming Music", "Flow State", "Gamma Waves",
+      "Binaural Beats", "Deep Work", "Concentration", "ADHD Brain", "Focus Music"
+    ],
+    "pexels_keywords": [
+      "developer coding dark screen",
+      "code terminal neon green",
+      "programmer laptop night",
+      "dark desk monitor glow",
+      "focused coder workspace minimal",
+      "keyboard typing close up",
+      "dual monitors code dark",
+      "neon city night focus"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "MIT Picower"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — ADHD Morning Focus",
+    "title_name": "40Hz Gamma | ADHD Morning Focus | Brown Noise Boost",
+    "benefit": "prime your ADHD brain for the day with 40Hz gamma activation and brown noise",
+    "short_benefit": "Morning Focus",
+    "description": "Start your day with 40Hz gamma binaural beats layered over brown noise. Nigg 2024 research shows white/pink noise supports ADHD focus with a positive effect size of g=0.249. Morning gamma activation helps prime prefrontal cortex for sustained attention.",
+    "hooks": [
+      "Most ADHD brains struggle hardest in the morning. 40Hz changes that.",
+      "40Hz gamma in the morning — your prefrontal cortex needs this to activate.",
+      "This is the ADHD morning routine science actually supports. Feel it."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Morning Focus",
+      "ADHD Morning", "Gamma Waves", "Binaural Beats", "Productivity",
+      "Executive Function", "Focus Music", "Neuroscience", "Brain Activation"
+    ],
+    "pexels_keywords": [
+      "morning sunrise minimal desk",
+      "coffee desk focused morning",
+      "person stretching morning light",
+      "bright minimal workspace morning",
+      "sunrise focus calm",
+      "journal desk morning coffee",
+      "window morning light desk",
+      "organized desk morning productive"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "Nigg 2024"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — Working Memory Boost",
+    "title_name": "40Hz Binaural | Working Memory | ADHD Focus | Brown Noise",
+    "benefit": "strengthen working memory and attention control with 40Hz gamma binaural beats",
+    "short_benefit": "Working Memory",
+    "description": "40Hz gamma binaural beats target working memory networks affected by ADHD. Based on Woods et al. 2024 Communications Biology — Brain.fm + Northeastern MIND Lab fMRI research showing amplitude-modulated audio strengthens attention networks in high-ADHD-symptom individuals.",
+    "hooks": [
+      "ADHD steals your working memory. 40Hz gamma fights back — right now.",
+      "Woods 2024 fMRI data: this frequency literally strengthens attention networks.",
+      "40Hz is rewiring your working memory pathways while you listen."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Working Memory",
+      "Gamma Waves", "Binaural Beats", "Attention", "Executive Function",
+      "Focus Music", "Neuroscience", "ADHD Brain", "Memory Enhancement"
+    ],
+    "pexels_keywords": [
+      "brain visualization neurons glowing",
+      "network connections dark blue",
+      "person thinking focused minimal",
+      "abstract brain waves neon",
+      "cognitive focus visualization",
+      "dark library books studying",
+      "concentrated person desk quiet",
+      "neural pathways visualization"
+    ],
+    "mood": "brain",
+    "noise_type": "brown",
+    "science_ref": "Woods 2024"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — Pomodoro Focus",
+    "title_name": "40Hz Gamma | Pomodoro Focus | ADHD Friendly | Brown Noise",
+    "benefit": "power through Pomodoro work sessions with 40Hz gamma and brown noise",
+    "short_benefit": "Pomodoro Focus",
+    "description": "40Hz gamma binaural beats designed for Pomodoro technique. Science-backed by Nigg 2024 — brown noise and gamma entrainment support ADHD focus better than silence. 25-minute format aligns with dopamine regulation cycles in ADHD brains.",
+    "hooks": [
+      "One Pomodoro. 40Hz gamma. Your ADHD brain can do this — start now.",
+      "40Hz is the frequency of focused attention. 25 minutes. Let's go.",
+      "ADHD + Pomodoro + 40Hz gamma = the focus stack that actually works."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Pomodoro",
+      "Pomodoro Timer", "Study Music", "Gamma Waves", "Binaural Beats",
+      "Focus Music", "Work Timer", "Productivity", "ADHD Study", "Deep Work"
+    ],
+    "pexels_keywords": [
+      "timer desk minimalist focus",
+      "person typing laptop focused",
+      "clean desk productive work",
+      "concentration study quiet room",
+      "dark workspace single lamp",
+      "focused student desk books",
+      "minimal office productive",
+      "work session coffee desk"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "Nigg 2024"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — ADHD Sleep",
+    "title_name": "40Hz Brown Noise | ADHD Sleep | Nervous System Reset",
+    "benefit": "calm ADHD hyperstimulation and ease into sleep with brown noise and gentle 40Hz",
+    "short_benefit": "ADHD Sleep",
+    "description": "ADHD brains struggle to switch off at night due to dopamine dysregulation and hyperstimulation. Brown noise masks intrusive thoughts while 40Hz gamma gradually downshifts to settle the nervous system. Science-backed by Nigg 2024 meta-analysis on noise-based ADHD interventions.",
+    "hooks": [
+      "ADHD brains can't turn off. Brown noise + 40Hz tells yours it's safe to rest.",
+      "Your nervous system is overstimulated. This frequency is about to change that.",
+      "40Hz + brown noise for ADHD sleep — the stack neuroscience actually supports."
+    ],
+    "tags": [
+      "ADHD", "ADHD Sleep", "40Hz Gamma", "Brown Noise", "Sleep Music",
+      "ADHD Insomnia", "Nervous System", "Gamma Waves", "Binaural Beats",
+      "Sleep Aid", "Relaxation", "Hyperstimulation", "ADHD Brain", "Rest"
+    ],
+    "pexels_keywords": [
+      "dark bedroom minimal cozy",
+      "person sleeping peaceful night",
+      "moonlight window dark room",
+      "calm night stars quiet",
+      "soft pillow bed dark",
+      "night sky calm dark",
+      "sleeping peacefully bedroom",
+      "dark ambient minimal room"
+    ],
+    "mood": "sleep",
+    "noise_type": "brown",
+    "science_ref": "Nigg 2024"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — Writing Flow",
+    "title_name": "40Hz Gamma | Writing Flow State | ADHD Brain | Brown Noise",
+    "benefit": "enter writing flow state and overcome ADHD executive function blocks",
+    "short_benefit": "Writing Flow",
+    "description": "Struggling to start writing with ADHD? 40Hz gamma binaural beats activate prefrontal circuits that control task initiation and sustained output. Brown noise masks distraction. Based on MIT Picower Lab 40Hz GENUS research and Nigg 2024 meta-analysis.",
+    "hooks": [
+      "ADHD makes starting impossible. 40Hz gamma removes that block — now.",
+      "40Hz is activating the part of your brain that starts and finishes tasks.",
+      "Your writing brain on gamma — less procrastination, more words on page."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Writing Music",
+      "Writing Focus", "Flow State", "Executive Function", "Gamma Waves",
+      "Binaural Beats", "Procrastination", "ADHD Brain", "Creative Focus"
+    ],
+    "pexels_keywords": [
+      "person writing journal focused",
+      "writer desk minimal lamp",
+      "notebook pen desk quiet",
+      "author typing laptop focused",
+      "writing flow creative desk",
+      "dark minimal desk writing",
+      "focused person notepad coffee",
+      "creative workspace clean"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "MIT Picower"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — Late Night Coding",
+    "title_name": "40Hz Gamma | Late Night Coding | ADHD Developer | Brown Noise",
+    "benefit": "sustain focus during late night coding sessions with 40Hz gamma and brown noise",
+    "short_benefit": "Late Night Code",
+    "description": "Late night coding with ADHD is both peak flow and peak risk for hyperfocus crashes. 40Hz gamma binaural beats with brown noise sustain prefrontal control while keeping you in the zone. Built by a developer with ADHD, backed by MIT Tsai Lab research.",
+    "hooks": [
+      "It's late. Your ADHD brain is finally awake. 40Hz keeps you in the zone.",
+      "Late night hyperfocus + 40Hz gamma = the developer's secret weapon.",
+      "40Hz is keeping your prefrontal cortex online while you ship."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Late Night Coding",
+      "Developer", "Programming", "Night Focus", "Gamma Waves", "Binaural Beats",
+      "Coding Music", "Deep Work", "Hyperfocus", "ADHD Brain"
+    ],
+    "pexels_keywords": [
+      "coding night dark neon screen",
+      "developer late night laptop",
+      "terminal code dark green glow",
+      "night city lights developer",
+      "dark desk monitor code night",
+      "programmer focused night scene",
+      "keyboard glow dark room",
+      "neon code screen close up"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "MIT Picower"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — Body Doubling",
+    "title_name": "40Hz Gamma | ADHD Body Doubling | Café Brown Noise | Focus",
+    "benefit": "simulate body doubling effect for ADHD focus with café ambient and 40Hz gamma",
+    "short_benefit": "Body Doubling",
+    "description": "Body doubling is one of the most effective ADHD focus strategies — working near others activates accountability circuits. This track combines café ambient sounds with 40Hz gamma binaural beats to simulate that effect remotely. Based on Nigg 2024 and ADHD body doubling research.",
+    "hooks": [
+      "ADHD focus hack: pretend someone is watching. This audio does that for you.",
+      "Body doubling works for ADHD. 40Hz + café sounds = your virtual study buddy.",
+      "40Hz gamma + café noise — the ADHD body doubling stack that actually helps."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Body Doubling",
+      "ADHD Study", "Café Sounds", "Virtual Study", "Gamma Waves", "Binaural Beats",
+      "Focus Music", "ADHD Productivity", "Study With Me", "Accountability"
+    ],
+    "pexels_keywords": [
+      "café people working busy",
+      "coffee shop ambient light",
+      "coworking space people focused",
+      "library people studying quiet",
+      "café window seat working",
+      "busy coffee shop ambient",
+      "laptop café ambient warm",
+      "study group library focused"
+    ],
+    "mood": "focus",
+    "noise_type": "brown",
+    "science_ref": "Nigg 2024"
+  },
+  {
+    "hz": 40,
+    "carrier_hz": 200,
+    "beat_hz": 40,
+    "name": "40Hz Gamma — ADHD Hyperfocus",
+    "title_name": "40Hz Gamma | ADHD Hyperfocus Mode | Brown Noise | Deep Work",
+    "benefit": "channel ADHD hyperfocus productively with 40Hz gamma entrainment and brown noise",
+    "short_benefit": "Hyperfocus Mode",
+    "description": "ADHD hyperfocus is a superpower when directed correctly. 40Hz gamma binaural beats help sustain and direct attention to the task at hand, while brown noise blocks competing stimuli. MIT Picower Lab's GENUS research validates 40Hz neural entrainment for attention support.",
+    "hooks": [
+      "ADHD hyperfocus is a superpower. 40Hz gamma makes it work for you.",
+      "40Hz gamma is locking your ADHD brain onto the task right now.",
+      "Hyperfocus mode activated. 40Hz + brown noise — don't stop until you're done."
+    ],
+    "tags": [
+      "ADHD", "ADHD Focus", "40Hz Gamma", "Brown Noise", "Hyperfocus",
+      "ADHD Hyperfocus", "Gamma Waves", "Binaural Beats", "Deep Work",
+      "Focus Music", "ADHD Productivity", "Neural Entrainment", "Flow State"
+    ],
+    "pexels_keywords": [
+      "intense focus person dark",
+      "concentrated eyes close up",
+      "person deep focus minimal",
+      "laser focus visualization",
+      "dark focus workspace glow",
+      "singular focus dark room",
+      "flow state person working",
+      "intense concentration minimal"
+    ],
+    "mood": "brain",
+    "noise_type": "brown",
+    "science_ref": "MIT Picower"
+  }
+]
