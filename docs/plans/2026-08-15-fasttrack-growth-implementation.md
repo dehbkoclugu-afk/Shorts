@@ -147,3 +147,21 @@
 7. Confirm legacy workflows and source files are unchanged.
 8. Commit intentional changes, push `agent/fasttrack-growth`, and open a draft PR against the repository default branch.
 
+## Task 9: Add multi-channel distribution exports
+
+**Files:**
+
+- Create: `fasttrack/src/distribution.py`
+- Create: `fasttrack/tests/test_distribution.py`
+- Modify: `fasttrack/config/channels.json`
+- Modify: `fasttrack/src/content_pack.py`
+- Modify: `fasttrack/README.md`
+
+**Steps:**
+
+1. Define content types, priority, and safe publishing mode for all ten channels.
+2. Generate channel-specific copy instead of treating the YouTube description as a universal post.
+3. Enforce title/text limits for YouTube, Pinterest, Threads, X, and SEO.
+4. Keep TikTok draft-only, Reddit human-only, and creator outreach disclosure-required.
+5. Export one JSON package per channel and a distribution summary.
+6. Verify every localized asset appears in every channel export.

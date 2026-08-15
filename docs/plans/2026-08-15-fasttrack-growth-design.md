@@ -253,3 +253,20 @@ Core report fields:
 - GitHub Actions produce reviewable artifacts and default to dry-run.
 - Tests cover safety checks, attribution links, and content-pack structure.
 - Publishing remains manual until fresh FastTrack channel credentials are configured.
+
+## 12. Channel distribution matrix
+
+| Channel | Primary assets | Initial mode |
+| --- | --- | --- |
+| YouTube | Short, title, description | API after fresh credentials |
+| Instagram | Reel, carousel, story | API after fresh credentials |
+| TikTok | Vertical video | Draft-only and human publish |
+| Facebook | Reel and feed video | API after fresh credentials |
+| Pinterest | Static and video Pin | API after approved access |
+| Threads | Text and image post | Scheduler after credentials |
+| X | Short text and image post | Manual or scheduler |
+| Reddit | Helpful post/comment outline | Human-only, disclosed |
+| Creator / UGC | Brief and talking points | Human outreach |
+| SEO | Article and FAQ outline | CMS after editorial review |
+
+Each localized record must create a separate export for all ten channels. YouTube is one consumer of the content engine, not its central data model.

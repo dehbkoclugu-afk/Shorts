@@ -8,6 +8,7 @@ from pathlib import Path
 
 from fasttrack.src.campaign_links import build_play_url
 from fasttrack.src.compliance import check_text
+from fasttrack.src.distribution import build_distribution, write_distribution_exports
 
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -179,4 +180,8 @@ def write_pack(records: list[dict], output_dir: Path) -> None:
         )
     (output_dir / "higgsfield-briefs.md").write_text(
         "\n".join(ugc_lines).rstrip() + "\n", encoding="utf-8"
+    )
+
+    write_distribution_exports(
+        build_distribution(records), output_dir / "platforms"
     )

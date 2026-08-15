@@ -54,6 +54,16 @@ The output contains:
 - `review.md`: item-by-item human approval checklist;
 - `higgsfield-briefs.md`: three safe creator-style briefs;
 - `storyboards/*.png`: branded vertical review frames;
+- `platforms/youtube.json`: Shorts titles, descriptions, and briefs;
+- `platforms/instagram.json`: Reels, carousel slides, captions, and alt text;
+- `platforms/tiktok.json`: vertical-video drafts and profile-link instructions;
+- `platforms/facebook.json`: Reels/feed-video copy;
+- `platforms/pinterest.json`: Pin titles, descriptions, and alt text;
+- `platforms/threads.json` and `platforms/x.json`: length-limited text posts;
+- `platforms/reddit.json`: human-only helpful-post outlines with disclosure;
+- `platforms/creator.json`: creator/UGC talking points and prohibited claims;
+- `platforms/seo.json`: article titles, metadata, and outlines;
+- `platforms/distribution-summary.md`: priority and publishing mode matrix;
 - `weekly-report.md`: production baseline.
 
 ## Publishing safety
@@ -68,6 +78,8 @@ The publishing workflow requires both explicit approval and dry-run mode. Live p
 
 Do not reuse the suspended legacy YouTube identity or any WAR SHORTS token.
 
+YouTube is not the system's center. Every localized content item produces exports for ten acquisition channels. TikTok is draft-only, Reddit is human-only, and creator outreach requires disclosure; Instagram, Facebook, Pinterest, Threads, X, SEO, and YouTube can gain reviewed adapters independently.
+
 ## Language rollout
 
 Launch content is produced in Turkish and English. Winning concepts can then be translated and reviewed for Spanish, Portuguese, German, and French. The configuration already reserves those locales, but unchecked machine translations must not be published.
@@ -75,4 +87,3 @@ Launch content is produced in Turkish and English. Winning concepts can then be 
 ## Metrics
 
 Use the stable master ID (`FT-001`) and localized asset ID (`FT-001-tr`) in every asset and export. Acquisition starts with Google Play Install Referrer links, Play Console reports, platform exports, and RevenueCat reporting. Adding a new in-app analytics SDK is outside this system and would require a separate privacy/Data Safety review.
-

@@ -1,16 +1,75 @@
 {
   "campaign": "launch_2026",
   "channels": {
-    "youtube": {"medium": "organic_video", "label": "YouTube Shorts"},
-    "instagram": {"medium": "organic_social", "label": "Instagram Reels"},
-    "tiktok": {"medium": "organic_video", "label": "TikTok"},
-    "facebook": {"medium": "organic_social", "label": "Facebook Reels"},
-    "pinterest": {"medium": "organic_social", "label": "Pinterest"},
-    "threads": {"medium": "organic_social", "label": "Threads"},
-    "x": {"medium": "organic_social", "label": "X"},
-    "reddit": {"medium": "community", "label": "Reddit"},
-    "creator": {"medium": "creator", "label": "Creator / UGC"},
-    "seo": {"medium": "organic_search", "label": "SEO"}
+    "youtube": {
+      "medium": "organic_video",
+      "label": "YouTube Shorts",
+      "priority": 1,
+      "publishing_mode": "api_after_credentials",
+      "content_types": ["short"]
+    },
+    "instagram": {
+      "medium": "organic_social",
+      "label": "Instagram",
+      "priority": 1,
+      "publishing_mode": "api_after_credentials",
+      "content_types": ["reel", "carousel", "story"]
+    },
+    "tiktok": {
+      "medium": "organic_video",
+      "label": "TikTok",
+      "priority": 1,
+      "publishing_mode": "draft_only",
+      "content_types": ["vertical_video"]
+    },
+    "facebook": {
+      "medium": "organic_social",
+      "label": "Facebook",
+      "priority": 2,
+      "publishing_mode": "api_after_credentials",
+      "content_types": ["reel", "feed_video"]
+    },
+    "pinterest": {
+      "medium": "organic_social",
+      "label": "Pinterest",
+      "priority": 2,
+      "publishing_mode": "api_after_access",
+      "content_types": ["pin", "video_pin"]
+    },
+    "threads": {
+      "medium": "organic_social",
+      "label": "Threads",
+      "priority": 2,
+      "publishing_mode": "scheduler_after_credentials",
+      "content_types": ["text", "image"]
+    },
+    "x": {
+      "medium": "organic_social",
+      "label": "X",
+      "priority": 3,
+      "publishing_mode": "manual_or_scheduler",
+      "content_types": ["text", "image"]
+    },
+    "reddit": {
+      "medium": "community",
+      "label": "Reddit",
+      "priority": 2,
+      "publishing_mode": "human_only",
+      "content_types": ["helpful_post", "comment"]
+    },
+    "creator": {
+      "medium": "creator",
+      "label": "Creator / UGC",
+      "priority": 1,
+      "publishing_mode": "human_outreach",
+      "content_types": ["ugc_brief", "creator_demo"]
+    },
+    "seo": {
+      "medium": "organic_search",
+      "label": "SEO",
+      "priority": 2,
+      "publishing_mode": "cms_after_review",
+      "content_types": ["article", "faq"]
+    }
   }
 }
-
