@@ -1,0 +1,272 @@
+{
+  "version": 1,
+  "topics": [
+    {
+      "id": "FT-001",
+      "series": "beginner",
+      "format": "faceless",
+      "locales": {
+        "tr": {
+          "hook": "16:8'e doğrudan başlamak zorunda değilsin.",
+          "script": "Yeni başlıyorsan ilk hedefin kusursuzluk değil, tekrar edebileceğin bir düzen olsun. 12 saatlik yemek molasıyla başlayıp bedenini ve günlük programını gözlemleyebilirsin. FastTrack başlangıç ve bitiş saatlerini senin için takip eder.",
+          "cta": "Kendi ritmini kurmak için FastTrack'i Google Play'de dene.",
+          "safety_note": "Bireysel sağlık kararları için bir sağlık uzmanına danış."
+        },
+        "en": {
+          "hook": "You do not have to jump straight into 16:8.",
+          "script": "If you are new, aim for a routine you can repeat instead of a perfect streak. You can begin with a 12-hour eating break and observe how it fits your day. FastTrack keeps the start and finish times clear.",
+          "cta": "Build your rhythm with FastTrack on Google Play.",
+          "safety_note": "Ask a qualified health professional about individual health decisions."
+        }
+      }
+    },
+    {
+      "id": "FT-002",
+      "series": "recovery",
+      "format": "ugc",
+      "locales": {
+        "tr": {
+          "hook": "Dün planın bozuldu diye haftan bitmedi.",
+          "script": "Bir öğün veya zor bir gün bütün ilerlemeni silmez. Ne olduğunu not et, bir sonraki uygun başlangıç saatini seç ve ritmine dön. FastTrack toparlanmayı cezadan daha değerli görür.",
+          "cta": "Bugün yeniden başlamak için FastTrack'i aç.",
+          "safety_note": "İçerik genel iyi yaşam bilgisi sunar."
+        },
+        "en": {
+          "hook": "One broken plan did not ruin your week.",
+          "script": "One meal or one difficult day does not erase your progress. Notice what happened, choose the next practical start time, and return to your rhythm. FastTrack values recovery more than punishment.",
+          "cta": "Open FastTrack and begin again today.",
+          "safety_note": "This content is general wellness information."
+        }
+      }
+    },
+    {
+      "id": "FT-003",
+      "series": "fasting-journey",
+      "format": "motion",
+      "locales": {
+        "tr": {
+          "hook": "Bugün kaçıncı oruç saatindesin?",
+          "script": "FastTrack ilerlemeni canlı halkada gösterir ve genel tahminlere dayalı metabolik aşamaları anlaşılır hale getirir. Bu zamanlamalar ölçüm değildir ve kişiden kişiye değişir.",
+          "cta": "Zamanlayıcını başlat ve ritmini tek ekranda izle.",
+          "safety_note": "Metabolik aşamalar genel tahmindir; tıbbi ölçüm değildir."
+        },
+        "en": {
+          "hook": "Which fasting hour are you in today?",
+          "script": "FastTrack shows progress on a living ring and explains metabolic stages based on general estimates. These timings are not measurements and vary by person.",
+          "cta": "Start your timer and follow your rhythm on one screen.",
+          "safety_note": "Metabolic stages are general estimates, not medical measurements."
+        }
+      }
+    },
+    {
+      "id": "FT-004",
+      "series": "myth-safety",
+      "format": "faceless",
+      "locales": {
+        "tr": {
+          "hook": "Otofaji için internette gördüğün tek bir saate güvenme.",
+          "script": "Otofaji zamanlaması yaş, beslenme, aktivite ve başka etkenlere göre kişiden kişiye değişir. Uygulamadaki aşamalar genel tahmindir; bedeninden yapılan tıbbi bir ölçüm değildir.",
+          "cta": "Tahminleri bağlamıyla görmek için FastTrack'i keşfet.",
+          "safety_note": "Bireysel sağlık kararları için bir sağlık uzmanına danış."
+        },
+        "en": {
+          "hook": "Do not trust one universal autophagy hour online.",
+          "script": "Autophagy timing varies by person with age, nutrition, activity, and other factors. In-app stages are a general estimate, not a medical measurement taken from your body.",
+          "cta": "See estimates with context in FastTrack.",
+          "safety_note": "Ask a qualified health professional about individual health decisions."
+        }
+      }
+    },
+    {
+      "id": "FT-005",
+      "series": "hydration",
+      "format": "screen-demo",
+      "locales": {
+        "tr": {
+          "hook": "Oruç takibinde en kolay unutulan şey: su.",
+          "script": "Sayaç ilerlerken günlük su hedefini başka bir uygulamada aramana gerek yok. FastTrack zamanlayıcı ve su takibini aynı sakin ekranda birleştirir.",
+          "cta": "Su hatırlatıcılarını FastTrack'te düzenle.",
+          "safety_note": "Sıvı ihtiyacı kişiye ve koşullara göre değişebilir."
+        },
+        "en": {
+          "hook": "The easiest fasting habit to forget: water.",
+          "script": "You do not need another app for your daily water goal while the timer runs. FastTrack keeps fasting and hydration tracking together on one calm screen.",
+          "cta": "Set your hydration reminders in FastTrack.",
+          "safety_note": "Hydration needs can vary by person and conditions."
+        }
+      }
+    },
+    {
+      "id": "FT-006",
+      "series": "product-demo",
+      "format": "screen-demo",
+      "locales": {
+        "tr": {
+          "hook": "Bir oruç zamanlayıcısı sadece geri sayım olmamalı.",
+          "script": "FastTrack; zamanlayıcıyı, suyu, öğünleri, kiloyu, seriyi ve haftalık ilerlemeyi aynı yerde tutar. Böylece farklı ekranlar arasında kaybolmadan rutininin tamamını görebilirsin.",
+          "cta": "FastTrack'i Google Play'den indir.",
+          "safety_note": "FastTrack bir iyi yaşam takip uygulamasıdır."
+        },
+        "en": {
+          "hook": "A fasting timer should be more than a countdown.",
+          "script": "FastTrack keeps your timer, water, meals, weight, streak, and weekly progress together. You can see the whole routine without jumping between different apps.",
+          "cta": "Download FastTrack from Google Play.",
+          "safety_note": "FastTrack is a wellness tracking app."
+        }
+      }
+    },
+    {
+      "id": "FT-007",
+      "series": "myth-safety",
+      "format": "talking-head",
+      "locales": {
+        "tr": {
+          "hook": "OMAD herkes için doğru başlangıç değildir.",
+          "script": "Daha uzun plan daha iyi plan demek değildir. Deneyim, günlük program ve bireysel sağlık durumu önemlidir. Yeni başlayanlar daha yumuşak bir planla düzen kurmayı değerlendirebilir.",
+          "cta": "FastTrack'te sana uygun zaman planlarını karşılaştır.",
+          "safety_note": "Hamilelik, ilaç kullanımı, yeme bozukluğu öyküsü veya sağlık durumunda uzman görüşü al."
+        },
+        "en": {
+          "hook": "OMAD is not the right starting point for everyone.",
+          "script": "A longer plan is not automatically a better plan. Experience, daily schedule, and individual health matter. Beginners may consider building consistency with a gentler schedule.",
+          "cta": "Compare available schedules in FastTrack.",
+          "safety_note": "Seek professional guidance for pregnancy, medication use, an eating-disorder history, or a health condition."
+        }
+      }
+    },
+    {
+      "id": "FT-008",
+      "series": "beginner",
+      "format": "listicle",
+      "locales": {
+        "tr": {
+          "hook": "16:8 zor geliyorsa önce bu üç şeyi kontrol et.",
+          "script": "Başlangıç saatini her gün değiştirmek, su takibini unutmak ve telafi için daha uzun plan seçmek ritim kurmayı zorlaştırabilir. Daha basit ve tekrar edilebilir bir plan seç.",
+          "cta": "Planını FastTrack'te sadeleştir.",
+          "safety_note": "Kendini kötü hissedersen orucu sonlandır ve gerektiğinde uzman desteği al."
+        },
+        "en": {
+          "hook": "If 16:8 feels difficult, check these three things first.",
+          "script": "Changing the start time every day, forgetting hydration, and choosing a longer plan to compensate can make consistency harder. Choose a simpler schedule you can repeat.",
+          "cta": "Simplify your plan in FastTrack.",
+          "safety_note": "End the fast if you feel unwell and seek professional support when needed."
+        }
+      }
+    },
+    {
+      "id": "FT-009",
+      "series": "support-mode",
+      "format": "screen-demo",
+      "locales": {
+        "tr": {
+          "hook": "Bırakmadan önce kendine 60 saniye ver.",
+          "script": "Açlık dalgası geldiğinde FastTrack destek modu seni kısa bir duraklamaya çağırır. Nasıl hissettiğini fark et, su durumunu kontrol et ve bilinçli karar ver.",
+          "cta": "Destek modunu FastTrack'te gör.",
+          "safety_note": "Şiddetli veya endişe verici belirtilerde orucu sonlandır ve yardım al."
+        },
+        "en": {
+          "hook": "Give yourself 60 seconds before quitting.",
+          "script": "When a hunger wave arrives, FastTrack support mode creates a short pause. Notice how you feel, check hydration, and make a deliberate decision.",
+          "cta": "See support mode inside FastTrack.",
+          "safety_note": "End the fast and seek help for severe or concerning symptoms."
+        }
+      }
+    },
+    {
+      "id": "FT-010",
+      "series": "recovery",
+      "format": "motion",
+      "locales": {
+        "tr": {
+          "hook": "Seri bozulduğunda neden sıfıra dönmüş sayılmazsın?",
+          "script": "Takvimde tek bir boş gün, öğrendiğin düzeni ve tamamladığın günleri silmez. FastTrack ilerlemeyi yalnızca kesintisiz seriyle değil, geri dönüş ve tutarlılıkla da gösterir.",
+          "cta": "Ritmine kaldığın yerden devam et.",
+          "safety_note": "İçerik genel iyi yaşam bilgisi sunar."
+        },
+        "en": {
+          "hook": "Why does a broken streak not put you back at zero?",
+          "script": "One blank day does not erase the routine you learned or the days you completed. FastTrack shows progress through recovery and consistency, not only an unbroken streak.",
+          "cta": "Return to your rhythm where you left off.",
+          "safety_note": "This content is general wellness information."
+        }
+      }
+    },
+    {
+      "id": "FT-011",
+      "series": "beginner",
+      "format": "screen-demo",
+      "locales": {
+        "tr": {
+          "hook": "İlk 12:12 planını 10 saniyede kur.",
+          "script": "Akşam son öğünün bittiğinde zamanlayıcıyı başlat. Sabah 12 saat tamamlandığında nasıl hissettiğini not et. Sürdürebiliyorsan aynı saatleri birkaç gün tekrarla.",
+          "cta": "İlk planını FastTrack'te başlat.",
+          "safety_note": "Bireysel sağlık kararları için bir sağlık uzmanına danış."
+        },
+        "en": {
+          "hook": "Set up your first 12:12 plan in ten seconds.",
+          "script": "Start the timer when your evening meal ends. After 12 hours, note how you feel. If the schedule works for you, repeat the same times for a few days.",
+          "cta": "Start your first plan in FastTrack.",
+          "safety_note": "Ask a qualified health professional about individual health decisions."
+        }
+      }
+    },
+    {
+      "id": "FT-012",
+      "series": "progress",
+      "format": "listicle",
+      "locales": {
+        "tr": {
+          "hook": "İlerleme yalnızca tartıdaki sayı değildir.",
+          "script": "Planı daha düzenli tamamlamak, su hedefini hatırlamak ve zor bir günden sonra geri dönebilmek de takip edilebilir ilerlemedir. FastTrack haftalık görünümde bu ritmi görmene yardım eder.",
+          "cta": "Kendi ilerleme işaretlerini FastTrack'te takip et.",
+          "safety_note": "İçerik genel iyi yaşam bilgisi sunar."
+        },
+        "en": {
+          "hook": "Progress is more than a number on the scale.",
+          "script": "Completing your plan more consistently, remembering hydration, and returning after a difficult day are trackable forms of progress too. FastTrack helps you see that rhythm in the weekly view.",
+          "cta": "Track your own signs of progress in FastTrack.",
+          "safety_note": "This content is general wellness information."
+        }
+      }
+    },
+    {
+      "id": "FT-013",
+      "series": "privacy",
+      "format": "ugc",
+      "locales": {
+        "tr": {
+          "hook": "Oruç takibi için hesap açmak istemiyor musun?",
+          "script": "FastTrack temel takip verilerini cihazında tutar ve başlamak için hesap istemez. Zamanlayıcı, su, kilo ve ilerleme ekranları sana ait sakin bir alanda kalır.",
+          "cta": "Özel ve sade takip için FastTrack'i dene.",
+          "safety_note": "Uygulama içindeki güncel gizlilik açıklamalarını inceleyebilirsin."
+        },
+        "en": {
+          "hook": "Do you want fasting tracking without creating an account?",
+          "script": "FastTrack keeps core tracking data on your device and does not require an account to begin. Your timer, water, weight, and progress stay in a calm space built for you.",
+          "cta": "Try FastTrack for private, simple tracking.",
+          "safety_note": "You can review the current privacy information inside the app."
+        }
+      }
+    },
+    {
+      "id": "FT-014",
+      "series": "challenge",
+      "format": "ugc",
+      "locales": {
+        "tr": {
+          "hook": "Yedi gün boyunca mükemmel değil, tutarlı olmayı dene.",
+          "script": "Kendine sürdürülebilir bir plan seç, her gün aynı başlangıç penceresine yaklaş ve zorlandığın günleri not et. Amaç en uzun oruç değil, tekrar edebileceğin ritmi bulmak.",
+          "cta": "7 Günlük Ritim serisine FastTrack ile katıl.",
+          "safety_note": "Kendini kötü hissedersen orucu sonlandır ve gerektiğinde uzman desteği al."
+        },
+        "en": {
+          "hook": "For seven days, practice consistency instead of perfection.",
+          "script": "Choose a sustainable plan, aim for a similar start window each day, and note the days that feel difficult. The goal is not the longest fast; it is a rhythm you can repeat.",
+          "cta": "Join the Seven-Day Rhythm series with FastTrack.",
+          "safety_note": "End the fast if you feel unwell and seek professional support when needed."
+        }
+      }
+    }
+  ]
+}
+

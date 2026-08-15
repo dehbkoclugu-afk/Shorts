@@ -1,0 +1,25 @@
+{
+  "name": "FastTrack",
+  "store_name": "FastTrack: Fasting Tracker",
+  "android_package": "com.dehbkoclugu.fasttrack",
+  "play_store_url": "https://play.google.com/store/apps/details?id=com.dehbkoclugu.fasttrack",
+  "positioning": {
+    "tr": "Oruçta mükemmellik değil, sürdürülebilir bir ritim.",
+    "en": "Build a sustainable fasting rhythm, not a perfect streak."
+  },
+  "launch_locales": ["tr", "en"],
+  "expansion_locales": ["es", "pt", "de", "fr"],
+  "palette": {
+    "primary": "#E84C5E",
+    "primary_light": "#FF6B7A",
+    "primary_dark": "#C73848",
+    "secondary": "#FF8A96",
+    "water": "#4A9DFF",
+    "dark_background": "#0F0F1A",
+    "dark_surface": "#1A1A2E",
+    "dark_card": "#16213E",
+    "light_background": "#FFFFFF",
+    "light_text": "#1A1A2E"
+  }
+}
+

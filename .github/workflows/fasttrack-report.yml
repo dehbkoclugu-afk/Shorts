@@ -1,0 +1,38 @@
+name: FastTrack — Baseline Report
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  report:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Build bilingual content calendar
+        run: python -m fasttrack.src.planner --output fasttrack/output
+
+      - name: Build report
+        run: >-
+          python -m fasttrack.src.report
+          --calendar fasttrack/output/content-calendar.csv
+          --output fasttrack/output/weekly-report.md
+
+      - name: Upload baseline report
+        uses: actions/upload-artifact@v4
+        with:
+          name: fasttrack-baseline-report-${{ github.run_id }}
+          path: fasttrack/output/weekly-report.md
+          if-no-files-found: error
+          retention-days: 14
+

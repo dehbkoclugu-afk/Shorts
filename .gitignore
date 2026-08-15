@@ -20,3 +20,9 @@ venv/
 *.temp
 assets/backgrounds/
 .pytubefix_oauth.json
+
+# Isolated feature worktrees
+.worktrees/
+
+# FastTrack generated review artifacts
+fasttrack/output/

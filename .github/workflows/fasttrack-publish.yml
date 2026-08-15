@@ -1,0 +1,58 @@
+name: FastTrack — Publish Gate
+
+on:
+  workflow_dispatch:
+    inputs:
+      content_id:
+        description: Approved master content ID, for example FT-001
+        required: true
+        type: string
+      approved:
+        description: I reviewed and approved this content
+        required: true
+        default: false
+        type: boolean
+      dry_run:
+        description: Generate a manifest without publishing
+        required: true
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+jobs:
+  approval-gate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Require explicit human approval
+        if: ${{ !inputs.approved }}
+        run: |
+          echo "Explicit human approval is required."
+          exit 1
+
+      - name: Build dry-run publish manifest
+        run: >-
+          python -m fasttrack.src.publish_guard
+          ${{ inputs.approved && '--approved' || '' }}
+          ${{ inputs.dry_run && '--dry-run' || '' }}
+          --content-id "${{ inputs.content_id }}"
+          --output fasttrack/output/publish-manifest.json
+
+      - name: Upload publish manifest
+        uses: actions/upload-artifact@v4
+        with:
+          name: fasttrack-publish-manifest-${{ github.run_id }}
+          path: fasttrack/output/publish-manifest.json
+          if-no-files-found: error
+          retention-days: 14
+

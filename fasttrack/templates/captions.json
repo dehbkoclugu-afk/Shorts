@@ -1,0 +1,7 @@
+{
+  "version": 1,
+  "templates": {
+    "tr": "{hook}\n\n{cta}\n\n{safety_note}\n\n#FastTrack #AralıklıOruç #OruçTakibi #SağlıklıAlışkanlıklar",
+    "en": "{hook}\n\n{cta}\n\n{safety_note}\n\n#FastTrack #IntermittentFasting #FastingTracker #HealthyHabits"
+  }
+}

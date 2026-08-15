@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "locale": "tr",
+  "content_ids": ["FT-006", "FT-011", "FT-013"],
+  "videos": {
+    "FT-006": {
+      "benefit": "Tüm oruç rutinin tek yerde.",
+      "beats": [
+        {"screen": "timer.png", "seconds": 3.5},
+        {"screen": "hydration.png", "seconds": 3.5},
+        {"screen": "progress.png", "seconds": 3.5}
+      ]
+    },
+    "FT-011": {
+      "benefit": "İlk sürdürülebilir planını kolayca kur.",
+      "beats": [
+        {"screen": "plans.png", "seconds": 4.0},
+        {"screen": "schedule.png", "seconds": 4.0},
+        {"screen": "timer.png", "seconds": 3.0}
+      ]
+    },
+    "FT-013": {
+      "benefit": "Hesap açmadan sade takip.",
+      "beats": [
+        {"screen": "launch.png", "seconds": 3.5},
+        {"screen": "timer.png", "seconds": 3.5},
+        {"screen": "privacy.png", "seconds": 4.0}
+      ]
+    }
+  }
+}

@@ -1,0 +1,2 @@
+"""FastTrack content factory tests."""
+
