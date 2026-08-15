@@ -1,6 +1,10 @@
 name: FastTrack — Build Content Pack
 
 on:
+  pull_request:
+    paths:
+      - "fasttrack/**"
+      - ".github/workflows/fasttrack-*.yml"
   workflow_dispatch:
     inputs:
       locales:
@@ -21,6 +25,9 @@ jobs:
   plan:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      FASTTRACK_LOCALES: ${{ inputs.locales || 'tr,en' }}
+      FASTTRACK_COUNT: ${{ inputs.count || 14 }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -37,11 +44,11 @@ jobs:
         run: python -m unittest discover -s fasttrack/tests -v
 
       - name: Build content pack
-        run: >-
-          python -m fasttrack.src.planner
-          --locales "${{ inputs.locales }}"
-          --count "${{ inputs.count }}"
-          --output fasttrack/output
+        run: |
+          python -m fasttrack.src.planner \
+            --locales "$FASTTRACK_LOCALES" \
+            --count "$FASTTRACK_COUNT" \
+            --output fasttrack/output
 
       - name: Upload review pack
         uses: actions/upload-artifact@v4
@@ -50,4 +57,3 @@ jobs:
           path: fasttrack/output/
           if-no-files-found: error
           retention-days: 14
-
