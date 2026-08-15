@@ -1,0 +1,74 @@
+{
+  "blocking_rules": [
+    {
+      "id": "guaranteed_weight_loss",
+      "patterns": [
+        "garanti kilo ver",
+        "kesin kilo ver",
+        "guaranteed weight loss",
+        "lose weight guaranteed",
+        "\\d+\\s*(kilo|kg|pound|lbs)\\s*(verdim|ver|lost|lose)"
+      ]
+    },
+    {
+      "id": "disease_treatment",
+      "patterns": [
+        "hastalığı tedavi",
+        "hastalığı iyileştir",
+        "diyabeti iyileştir",
+        "reflüyü tedavi",
+        "treats? disease",
+        "cures? diabetes",
+        "cures? reflux"
+      ]
+    },
+    {
+      "id": "fake_testimonial",
+      "patterns": [
+        "bu uygulamayla .* (verdim|iyileştim)",
+        "this app made me lose",
+        "doctor recommended this app"
+      ]
+    },
+    {
+      "id": "minor_targeting",
+      "patterns": [
+        "çocuklar için oruç",
+        "ergenler için oruç",
+        "fasting for kids",
+        "fasting for teenagers"
+      ]
+    },
+    {
+      "id": "ignore_medical_care",
+      "patterns": [
+        "doktoruna danışma",
+        "ilacını bırak",
+        "ignore your doctor",
+        "stop your medication"
+      ]
+    },
+    {
+      "id": "universal_exact_timing",
+      "patterns": [
+        "otofaji kesin olarak \\d+",
+        "ketozis kesin olarak \\d+",
+        "autophagy always starts at \\d+",
+        "ketosis always starts at \\d+"
+      ]
+    }
+  ],
+  "disclaimer_rules": [
+    {
+      "id": "metabolic_estimate",
+      "patterns": ["otofaji", "ketozis", "yağ yakımı", "autophagy", "ketosis", "fat burning"],
+      "required_any": [
+        "genel tahmin",
+        "kişiden kişiye değiş",
+        "general estimate",
+        "varies by person"
+      ]
+    }
+  ]
+}
+

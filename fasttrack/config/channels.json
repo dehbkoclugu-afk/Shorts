@@ -1,0 +1,16 @@
+{
+  "campaign": "launch_2026",
+  "channels": {
+    "youtube": {"medium": "organic_video", "label": "YouTube Shorts"},
+    "instagram": {"medium": "organic_social", "label": "Instagram Reels"},
+    "tiktok": {"medium": "organic_video", "label": "TikTok"},
+    "facebook": {"medium": "organic_social", "label": "Facebook Reels"},
+    "pinterest": {"medium": "organic_social", "label": "Pinterest"},
+    "threads": {"medium": "organic_social", "label": "Threads"},
+    "x": {"medium": "organic_social", "label": "X"},
+    "reddit": {"medium": "community", "label": "Reddit"},
+    "creator": {"medium": "creator", "label": "Creator / UGC"},
+    "seo": {"medium": "organic_search", "label": "SEO"}
+  }
+}
+

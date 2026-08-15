@@ -1,0 +1,31 @@
+{
+  "version": 1,
+  "disclosure": {
+    "tr": "Canlandırma / AI destekli demo. Gerçek kullanıcı sonucu değildir.",
+    "en": "Dramatized / AI-assisted demo. Not a real user outcome."
+  },
+  "briefs": [
+    {
+      "id": "UGC-01",
+      "persona": "busy-professional",
+      "duration_seconds": 20,
+      "visual": "A calm adult professional checks a phone between meetings; overlay the FastTrack timer and hydration screens.",
+      "structure": ["problem: manual time calculation", "demo: timer and reminders", "CTA: build a repeatable rhythm"]
+    },
+    {
+      "id": "UGC-02",
+      "persona": "gentle-restarter",
+      "duration_seconds": 20,
+      "visual": "An adult restarts a routine after a difficult day; no body transformation or scale close-up.",
+      "structure": ["problem: broken plan", "reframe: one day does not erase progress", "demo: recovery-oriented progress"]
+    },
+    {
+      "id": "UGC-03",
+      "persona": "privacy-conscious-user",
+      "duration_seconds": 18,
+      "visual": "An adult uses FastTrack without an account; show local tracking features and privacy copy.",
+      "structure": ["problem: account fatigue", "demo: start immediately", "CTA: simple private tracking"]
+    }
+  ]
+}
+
