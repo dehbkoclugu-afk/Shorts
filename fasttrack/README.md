@@ -15,6 +15,36 @@ Google Play: <https://play.google.com/store/apps/details?id=com.dehbkoclugu.fast
 
 It does not use the legacy WAR SHORTS schedules, prompts, accounts, or credentials.
 
+## First Turkish video batch
+
+The first MP4 batch uses `FT-006`, `FT-011`, and `FT-013`. Source screens are
+captured from the real FastTrack Flutter widget tree in Turkish dark mode and
+stored under `fasttrack/assets/screens/tr/`. They must be checked against the
+current production Android app before publishing.
+
+Install the local render dependencies:
+
+```bash
+python -m pip install "Pillow>=10.0.0" "edge-tts>=7,<8"
+```
+
+Build the three selected records and render the clean 1080×1920 masters:
+
+```bash
+python -m fasttrack.src.planner --locales tr \
+  --content-id FT-006 --content-id FT-011 --content-id FT-013 \
+  --output fasttrack/output
+python -m fasttrack.src.video_renderer \
+  --pack fasttrack/output/content-pack.json \
+  --output fasttrack/output/videos
+python -m fasttrack.src.video_validation fasttrack/output/videos/*.mp4
+```
+
+The output contains MP4 masters, thumbnails, a structured build report, the
+content pack, captions, and channel-coded Play links. Videos contain no social
+platform watermark. Publishing stays manual and requires visual, copy, link,
+health-claim, and privacy review.
+
 ## Local usage
 
 From the repository root:

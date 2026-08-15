@@ -1,18 +1,31 @@
-name: FastTrack — Render Storyboards
+name: FastTrack — Render Videos
 
 on:
+  pull_request:
+    paths:
+      - "fasttrack/assets/screens/**"
+      - "fasttrack/config/video_batch.json"
+      - "fasttrack/src/narration.py"
+      - "fasttrack/src/video_manifest.py"
+      - "fasttrack/src/video_renderer.py"
+      - "fasttrack/src/video_validation.py"
+      - "fasttrack/tests/test_narration.py"
+      - "fasttrack/tests/test_video_manifest.py"
+      - "fasttrack/tests/test_video_renderer.py"
+      - "fasttrack/tests/test_video_validation.py"
+      - ".github/workflows/fasttrack-render.yml"
   workflow_dispatch:
     inputs:
       locales:
-        description: Comma-separated locales
+        description: Launch locale
         required: true
-        default: tr,en
+        default: tr
         type: string
-      count:
-        description: Number of master concepts (1-14)
+      content_ids:
+        description: Comma-separated approved FastTrack content IDs
         required: true
-        default: 14
-        type: number
+        default: FT-006,FT-011,FT-013
+        type: string
 
 permissions:
   contents: read
@@ -20,7 +33,10 @@ permissions:
 jobs:
   render:
     runs-on: ubuntu-latest
-    timeout-minutes: 15
+    timeout-minutes: 25
+    env:
+      FASTTRACK_LOCALE: ${{ inputs.locales || 'tr' }}
+      FASTTRACK_IDS: ${{ inputs.content_ids || 'FT-006,FT-011,FT-013' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -30,15 +46,34 @@ jobs:
         with:
           python-version: "3.11"
 
-      - name: Install Pillow
-        run: python -m pip install "Pillow>=10.0.0"
+      - name: Install render dependencies
+        run: python -m pip install "Pillow>=10.0.0" "edge-tts>=7,<8"
+
+      - name: Verify media tools
+        run: |
+          ffmpeg -version
+          ffprobe -version
+
+      - name: Run FastTrack tests
+        run: python -m unittest discover -s fasttrack/tests -v
 
       - name: Build safe content pack
-        run: >-
-          python -m fasttrack.src.planner
-          --locales "${{ inputs.locales }}"
-          --count "${{ inputs.count }}"
-          --output fasttrack/output
+        run: |
+          IFS=',' read -ra requested <<< "$FASTTRACK_IDS"
+          planner_args=()
+          for raw_id in "${requested[@]}"; do
+            content_id="${raw_id//[[:space:]]/}"
+            [[ "$content_id" =~ ^FT-[0-9]{3}$ ]] || {
+              echo "Invalid content ID: $raw_id"
+              exit 1
+            }
+            planner_args+=(--content-id "$content_id")
+          done
+          test "${#planner_args[@]}" -gt 0
+          python -m fasttrack.src.planner \
+            --locales "$FASTTRACK_LOCALE" \
+            "${planner_args[@]}" \
+            --output fasttrack/output
 
       - name: Render branded storyboards
         run: >-
@@ -46,17 +81,25 @@ jobs:
           --pack fasttrack/output/content-pack.json
           --output fasttrack/output/storyboards
 
+      - name: Render Turkish vertical videos
+        run: >-
+          python -m fasttrack.src.video_renderer
+          --pack fasttrack/output/content-pack.json
+          --output fasttrack/output/videos
+
+      - name: Validate video deliverables
+        run: python -m fasttrack.src.video_validation fasttrack/output/videos/*.mp4
+
       - name: Build production baseline report
         run: >-
           python -m fasttrack.src.report
           --calendar fasttrack/output/content-calendar.csv
           --output fasttrack/output/weekly-report.md
 
-      - name: Upload storyboard review package
+      - name: Upload video review package
         uses: actions/upload-artifact@v4
         with:
-          name: fasttrack-storyboards-${{ github.run_id }}
+          name: fasttrack-videos-${{ github.run_id }}
           path: fasttrack/output/
           if-no-files-found: error
           retention-days: 14
-
